@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1548361554">
-  <File Type="BITSTR-BMM" Name="SecurityCameraCode_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="SecurityCameraCode_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="SecurityCameraCode_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="SecurityCameraCode_power_routed.rpt"/>
   <File Type="PA-TCL" Name="SecurityCameraCode.tcl"/>
-  <File Type="OPT-TIMING" Name="SecurityCameraCode_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="SecurityCameraCode_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="SecurityCameraCode_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="SecurityCameraCode_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="SecurityCameraCode_reports.tcl"/>
+  <File Type="OPT-DCP" Name="SecurityCameraCode_opt.dcp"/>
   <File Type="OPT-DRC" Name="SecurityCameraCode_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="SecurityCameraCode.hwdef"/>
   <File Type="PWROPT-DCP" Name="SecurityCameraCode_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="SecurityCameraCode_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="SecurityCameraCode_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="SecurityCameraCode_placed.dcp"/>
   <File Type="PLACE-IO" Name="SecurityCameraCode_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="SecurityCameraCode_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="SecurityCameraCode_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="SecurityCameraCode_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="SecurityCameraCode_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="SecurityCameraCode_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="SecurityCameraCode_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="SecurityCameraCode.bgn"/>
-  <File Type="PLACE-TIMING" Name="SecurityCameraCode_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="SecurityCameraCode_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="SecurityCameraCode.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="SecurityCameraCode_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="SecurityCameraCode_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="SecurityCameraCode_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="SecurityCameraCode.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="SecurityCameraCode_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="SecurityCameraCode_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="SecurityCameraCode_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="SecurityCameraCode_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="SecurityCameraCode_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="SecurityCameraCode_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="SecurityCameraCode.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="SecurityCameraCode_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="SecurityCameraCode.mmi"/>
+  <File Type="BITSTR-LTX" Name="SecurityCameraCode.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="SecurityCameraCode_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="SecurityCameraCode.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SecurityCameraCode_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="SecurityCameraCode.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SecurityCameraCode_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="SecurityCameraCode.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="SecurityCameraCode_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="SecurityCameraCode_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="SecurityCameraCode_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="SecurityCameraCode_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="SecurityCameraCode_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="SecurityCameraCode_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="SecurityCameraCode_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="SecurityCameraCode_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="SecurityCameraCode_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="SecurityCameraCode_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="SecurityCameraCode_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="SecurityCameraCode_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SecurityCameraCode_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SecurityCameraCode_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SecurityCameraCode_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SecurityCameraCode_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SecurityCameraCode_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SecurityCameraCode_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="SecurityCameraCode.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SecurityCameraCode_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="SecurityCameraCode.rbt"/>
   <File Type="BITSTR-NKY" Name="SecurityCameraCode.nky"/>
   <File Type="BG-DRC" Name="SecurityCameraCode.drc"/>
@@ -86,7 +67,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../Desktop/digilent-xdc-master/digilent-xdc-master/Nexys-Video-Master.xdc">
+    <File Path="$PPRDIR/../../../../../Desktop/digilent-xdc-master/digilent-xdc-master/Nexys-Video-Master.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -97,9 +78,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
