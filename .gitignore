@@ -71,3 +71,8 @@ _ngo/
 _xmsgs/
 
 # End of https://www.gitignore.io/api/xilinxise
+
+*.ip_user_files/
+ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs
+ACESSecurityCamera/__pycache__
+ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.cache
