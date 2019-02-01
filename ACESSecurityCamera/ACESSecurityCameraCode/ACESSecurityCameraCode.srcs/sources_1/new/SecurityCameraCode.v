@@ -202,15 +202,15 @@ endmodule // uart_rx
 
 */
 
-`default_nettype none
-`include "baudgen.vh"
+//`default_nettype none
+//`include "baudgen.vh"
 
 module rxleds #(
         parameter BAUDRATE = 625
  )(
-        input wire sys_clk_pin,
+        input wire clk,
         input wire uart_tx_in,
-        output reg [3:0] led
+        output reg [7:0] led
  );
  
  wire rcv;
@@ -219,11 +219,11 @@ module rxleds #(
  
  reg rstn = 0;
  
- always @(posedge sys_clk_pin)
+ always @(posedge clk)
     rstn <= 1;
     
  uart_rx #(19200)
-    RX0 (.clk(sys_clk_pin),
+    RX0 (.clk(clk),
         .rstn(rstn),
         .rx(uart_tx_in),
         .rcv(rcv),
@@ -231,10 +231,10 @@ module rxleds #(
        );
     
  
- always @ (posedge sys_clk_pin)
+ always @ (posedge clk)
     if (!rstn)
         led <= 0;
         
     else if (rcv == 1'b1)
-        led <= data[3:0];
+        led <= data[7:0];
 endmodule

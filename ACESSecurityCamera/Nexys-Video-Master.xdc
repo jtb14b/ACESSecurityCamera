@@ -8,9 +8,6 @@
 set_property -dict { PACKAGE_PIN R4    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L13P_T2_MRCC_34 Sch=sysclk
 create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
 
-#set_property -dict { PACKAGE_PIN R4    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; #IO_L13P_T2_MRCC_34 Sch=sysclk
-#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports CLK100MHZ]
-
 ## FMC Transceiver clocks (Must be set to value provided by Mezzanine card, currently set to 156.25 MHz)
 ## Note: This clock is attached to a MGTREFCLK pin
 #set_property -dict { PACKAGE_PIN E6 } [get_ports { GTP_CLK_N }];
@@ -314,4 +311,4 @@ set_property -dict { PACKAGE_PIN V18   IOSTANDARD LVCMOS33 } [get_ports { uart_t
 set_property CONFIG_VOLTAGE 3.3 [current_design]
 set_property CFGBVS VCCO [current_design]
 # "This prevents a problem, but it's a bad idea" -- Xilinx
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets btnc_IBUF]
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets btnc_IBUF]
