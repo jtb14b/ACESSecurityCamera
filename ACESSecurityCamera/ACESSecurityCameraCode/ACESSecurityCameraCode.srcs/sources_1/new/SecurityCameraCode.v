@@ -55,14 +55,14 @@ endmodule
 // Example: 10 MHz Clock, 115200 baud UART
 // (10000000)/(115200) = 87
   
-  /*
+  
 module uart_rx 
-  #(parameter CLKS_PER_BIT = 5208)
+  #(parameter CLKS_PER_BIT = 869)
   (
-   input        sys_clk_pin,
+   input        clk,
    input        uart_tx_in,// input        i_Rx_Serial,
   // output       o_Rx_DV,
-   output [7:0] led//output [7:0] o_Rx_Byte
+   output reg [7:0] led//output [7:0] o_Rx_Byte
    );
     
   parameter s_IDLE         = 3'b000;
@@ -79,21 +79,26 @@ module uart_rx
   reg [7:0]     r_Rx_Byte     = 0;
   reg           r_Rx_DV       = 0;
   reg [2:0]     r_SM_Main     = 0;
+//  reg [7:0]     counter       = 0;
+
   
-  reg [7:0]     led = 0;
+ // reg [7:0]     led = 0;
    
   // Purpose: Double-register the incoming data.
   // This allows it to be used in the UART RX Clock Domain.
   // (It removes problems caused by metastability)
-  always @(posedge sys_clk_pin)
+  always @(posedge clk)
     begin
       r_Rx_Data_R <= uart_tx_in; //r_Rx_Data_R <= i_Rx_Serial;
       r_Rx_Data   <= r_Rx_Data_R;
     end
-   
+  
+ 
+  
+  
    
   // Purpose: Control RX state machine
-  always @(posedge sys_clk_pin)
+  always @(posedge clk)
     begin
        
       case (r_SM_Main)
@@ -190,23 +195,31 @@ module uart_rx
       endcase
     end   
    
-//  assign o_Rx_DV   = r_Rx_DV;
-   //led = r_Rx_Byte;//assign o_Rx_Byte = r_Rx_Byte;
    
-   always @ (uart_tx_in) begin
-    led[7] = 1'b1;
-    if (r_Rx_Byte != 1'b00000000)
-        led = r_Rx_Byte;
-    end
+   
+   always @ (posedge r_Rx_DV) begin
+        led <= r_Rx_Byte;
+   end
+
+  
+   
+ // assign o_Rx_DV   = r_Rx_DV;
+   //led <= r_Rx_Byte[7:0];//assign o_Rx_Byte = r_Rx_Byte;
+   
+  // always @ (uart_tx_in) begin
+   // led[7] = 1'b1;
+  //  if (r_Rx_Byte != 1'b00000000)
+  //      led = r_Rx_Byte;
+  //  end
 endmodule // uart_rx
 
-*/
 
+/*
 `default_nettype none
 `include "baudgen.vh"
 
 module rxleds #(
-        parameter BAUDRATE = `B115200
+        parameter BAUDRATE = 104
  )(
         input wire clk,
         input wire uart_tx_in,
@@ -222,7 +235,7 @@ module rxleds #(
  always @(posedge clk)
     rstn <= 1;
     
- uart_rx #(BAUDRATE)
+ uart_rx #(104)
     RX0 (.clk(clk),
         .rstn(rstn),
         .rx(uart_tx_in),
@@ -249,3 +262,4 @@ module rxleds #(
     //led <= data[7:0];    
   end
 endmodule
+*/
