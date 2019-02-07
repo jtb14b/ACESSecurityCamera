@@ -17,31 +17,9 @@
 // Revision 0.01 - File Created
 // Additional Comments:
 // 
-//////////////////////////////////////////////////////////////////////////////////
 
-/*
+//User Input Module
 
-module SecurityCameraCode(
-    input btnc,
-    input btnl,
-    input btnr,
-    input btnu,
-    input btnd,
-    output [7:0] led
-    );
-    
-    reg[7:0] led;
-    
-    always @ * begin
-        led[7] = btnl;
-        led[0] = btnr;
-        led[4] = btnu;
-        led[5] = btnd;
-    end
-    
-endmodule
-
-*/
 //////////////////////////////////////////////////////////////////////
 // File Downloaded from http://www.nandland.com
 //////////////////////////////////////////////////////////////////////
@@ -52,7 +30,7 @@ endmodule
 // 
 // Set Parameter CLKS_PER_BIT as follows:
 // CLKS_PER_BIT = (Frequency of i_Clock)/(Frequency of UART)
-// Example: 10 MHz Clock, 115200 baud UART
+// Example: 10 MHz Clock, 115200 baud UART <We have a 100 MHz clock --Jared>
 // (10000000)/(115200) = 87
   
   
@@ -60,9 +38,10 @@ module uart_rx
   #(parameter CLKS_PER_BIT = 869)
   (
    input        clk,
-   input        uart_tx_in,// input        i_Rx_Serial,
+   input        uart_tx_in,
   // output       o_Rx_DV,
-   output reg [7:0] led//output [7:0] o_Rx_Byte
+   output reg [7:0] led,
+   output [7:0] ja
    );
     
   parameter s_IDLE         = 3'b000;
@@ -70,6 +49,7 @@ module uart_rx
   parameter s_RX_DATA_BITS = 3'b010;
   parameter s_RX_STOP_BIT  = 3'b011;
   parameter s_CLEANUP      = 3'b100;
+  
    
   reg           r_Rx_Data_R = 1'b1;
   reg           r_Rx_Data   = 1'b1;
@@ -79,10 +59,14 @@ module uart_rx
   reg [7:0]     r_Rx_Byte     = 0;
   reg           r_Rx_DV       = 0;
   reg [2:0]     r_SM_Main     = 0;
-//  reg [7:0]     counter       = 0;
-
   
- // reg [7:0]     led = 0;
+  reg [7:0]     ja = 8'h00;
+
+always @ uart_tx_in begin
+    ja[0] <= uart_tx_in;
+    ja[1] <= uart_tx_in;
+end
+
    
   // Purpose: Double-register the incoming data.
   // This allows it to be used in the UART RX Clock Domain.
@@ -195,7 +179,7 @@ module uart_rx
       endcase
     end   
    
-   
+//   assign led = r_Rx_Byte;
    
    always @ (posedge r_Rx_DV) begin
         led <= r_Rx_Byte;
@@ -263,3 +247,4 @@ module rxleds #(
   end
 endmodule
 */
+
