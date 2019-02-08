@@ -30,12 +30,16 @@ class myser():
         try:
             if self.ser.is_open:
                 s = str(data)
+                print(s) ##
                 chars = []
                 for c in s:
                     chars.append(ord(c))
                     chars = list(map(int, chars))
                 self.ser.write(chars)
                 self.ser.flush()
+                print("\n") ##
+                print(chars) ##
+                print("\n") ##
         except Exception as ex:
             template = "ss: An exception of type {0} occured. Arguments:\n{1!r}"
             message = template.format(type(ex).__name__, ex.args)
