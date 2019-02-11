@@ -39,7 +39,6 @@ module uart_rx
   (
    input        clk,
    input        uart_tx_in,
-  // output       o_Rx_DV,
    output reg [7:0] led
    );
     
@@ -67,7 +66,7 @@ module uart_rx
   // (It removes problems caused by metastability)
   always @(posedge clk)
     begin
-      r_Rx_Data_R <= uart_tx_in; //r_Rx_Data_R <= i_Rx_Serial;
+      r_Rx_Data_R <= uart_tx_in;
       r_Rx_Data   <= r_Rx_Data_R;
     end
   
@@ -173,72 +172,13 @@ module uart_rx
       endcase
     end   
    
-//   assign led = r_Rx_Byte;
+
    
    always @ (posedge r_Rx_DV) begin
         led <= r_Rx_Byte;
    end
 
-  
-   
- // assign o_Rx_DV   = r_Rx_DV;
-   //led <= r_Rx_Byte[7:0];//assign o_Rx_Byte = r_Rx_Byte;
-   
-  // always @ (uart_tx_in) begin
-   // led[7] = 1'b1;
-  //  if (r_Rx_Byte != 1'b00000000)
-  //      led = r_Rx_Byte;
-  //  end
-endmodule // uart_rx
-
-
-/*
-`default_nettype none
-`include "baudgen.vh"
-
-module rxleds #(
-        parameter BAUDRATE = 104
- )(
-        input wire clk,
-        input wire uart_tx_in,
-        output reg [7:0] led
- );
- 
- wire rcv;
- 
- wire [7:0] data;
- 
- reg rstn = 0;
- 
- always @(posedge clk)
-    rstn <= 1;
-    
- uart_rx #(104)
-    RX0 (.clk(clk),
-        .rstn(rstn),
-        .rx(uart_tx_in),
-        .rcv(rcv),
-        .data(data)
-       );
-    
- 
- always @ (posedge clk) begin
-    if (!rstn)
-        led <= 0;
-        
-    else if (rcv == 1'b1) begin
-        led[0] <= data[0];
-        led[1] <= data[1];
-        led[2] <= data[2];
-        led[3] <= data[3];
-        led[4] <= data[4];
-        led[5] <= data[5];
-        led[6] <= data[6];
-        led[7] <= data[7];
-    end
-       // led <= data[3:0];
-    //led <= data[7:0];    
-  end
 endmodule
-*/
+
+
 
