@@ -32,23 +32,21 @@
 // CLKS_PER_BIT = (Frequency of i_Clock)/(Frequency of UART)
 // Example: 10 MHz Clock, 115200 baud UART <We have a 100 MHz clock --Jared>
 // (10000000)/(115200) = 87
+
   
-/*  
-module user_input 
-  #(parameter CLKS_PER_BIT = 869)
-  (
-   input        clk,
-   input        uart_tx_in,
-   output reg [7:0] led
-   );
-   */
    
 module user_input 
      #(parameter CLKS_PER_BIT = 869)
      (
-      input        clk,
-      input        uart_tx_in,
-      output reg [7:0] led
+      input         clk,
+      input         uart_tx_in,
+      output  reg   MTRL,
+      output  reg   MTRR,
+      output  reg   MTRU,
+      output  reg   MTRD,
+      output  reg   MTRZI,
+      output  reg   MTRZO,
+      output  reg   UNKNOWN
       );
     
   parameter s_IDLE         = 3'b000;
@@ -184,7 +182,31 @@ module user_input
 
    
    always @ (posedge r_Rx_DV) begin
-        led <= r_Rx_Byte;
+        //led <= r_Rx_Byte;
+        MTRL <= 0;
+        MTRR <= 0;
+        MTRU <= 0;
+        MTRD <= 0;
+        MTRZI <= 0;
+        MTRZO <= 0;
+        UNKNOWN <= 0;
+        
+        case (r_Rx_Byte)
+            8'h00:
+                MTRL <= 1;
+            8'h01:
+                MTRR <= 1;
+            8'h02:
+                MTRU <= 1;
+            8'h03:
+                MTRD <= 1;
+            8'h04:
+                MTRZI <= 1;
+            8'h04:
+                MTRZO <= 1;
+            default:
+                UNKNOWN <= 1;
+        endcase
    end
 
 endmodule

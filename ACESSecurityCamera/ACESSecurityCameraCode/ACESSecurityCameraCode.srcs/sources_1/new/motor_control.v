@@ -29,10 +29,21 @@ module motor_control(
     input MTRZO,    //Flag for zooming out
     
     input clk,
+    output reg [7:0] led,
     
     //Used to communicate with motor controller
     output sclk,
     output SS,
     output MOSI
     );
+    
+    always @ (MTRL or MTRR or MTRU or MTRD or MTRZI or MTRZO) begin
+        led[0] <= MTRL;
+        led[1] <= MTRR;
+        led[2] <= MTRU;
+        led[3] <= MTRD;
+        led[4] <= MTRZI;
+        led[5] <= MTRZO;
+    end
+    
 endmodule

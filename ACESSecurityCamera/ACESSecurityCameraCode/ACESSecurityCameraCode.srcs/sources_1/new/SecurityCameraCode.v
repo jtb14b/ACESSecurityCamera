@@ -38,10 +38,23 @@ module SecurityCameraCode
       output wire [7:0] led
       );
       
+      wire MTRL;
+      wire MTRR;
+      wire MTRU;
+      wire MTRD;
+      wire MTRZI;
+      wire MTRZO;
+      wire UNKNOWN;
+      
       user_input UI(
         .clk(clk),
         .uart_tx_in(uart_tx_in),
-        .led(led)
+        .MTRL(MTRL),
+        .MTRR(MTRR),
+        .MTRU(MTRU),
+        .MTRD(MTRD),
+        .MTRZI(MTRZI),
+        .MTRZO(MTRZO)
         );
         
 endmodule
