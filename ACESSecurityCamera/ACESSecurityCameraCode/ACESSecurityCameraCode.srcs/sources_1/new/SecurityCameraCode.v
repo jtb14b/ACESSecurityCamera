@@ -40,8 +40,7 @@ module uart_rx
    input        clk,
    input        uart_tx_in,
   // output       o_Rx_DV,
-   output reg [7:0] led,
-   output [7:0] ja
+   output reg [7:0] led
    );
     
   parameter s_IDLE         = 3'b000;
@@ -60,12 +59,7 @@ module uart_rx
   reg           r_Rx_DV       = 0;
   reg [2:0]     r_SM_Main     = 0;
   
-  reg [7:0]     ja = 8'h00;
 
-always @ uart_tx_in begin
-    ja[0] <= uart_tx_in;
-    ja[1] <= uart_tx_in;
-end
 
    
   // Purpose: Double-register the incoming data.
