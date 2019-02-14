@@ -202,7 +202,7 @@ module user_input
                 MTRD <= 1;
             8'h04:
                 MTRZI <= 1;
-            8'h04:
+            8'h05:
                 MTRZO <= 1;
             default:
                 UNKNOWN <= 1;

@@ -46,6 +46,10 @@ module SecurityCameraCode
       wire MTRZO;
       wire UNKNOWN;
       
+      wire sclk;
+      wire SS;
+      wire MOSI;
+      
       user_input UI(
         .clk(clk),
         .uart_tx_in(uart_tx_in),
@@ -54,8 +58,29 @@ module SecurityCameraCode
         .MTRU(MTRU),
         .MTRD(MTRD),
         .MTRZI(MTRZI),
-        .MTRZO(MTRZO)
+        .MTRZO(MTRZO),
+        .UNKNOWN(UNKNOWN)
         );
+        
+      motor_control MC(
+        .MTRL(MTRL),
+        .MTRR(MTRR),
+        .MTRU(MTRU),
+        .MTRD(MTRD),
+        .MTRZI(MTRZI),
+        .MTRZO(MTRZO),
+        
+        .clk(clk),
+        .led(led),
+        
+        .sclk(sclk),
+        .SS(SS),
+        .MOSI(MOSI)
+        );
+        
+        
+        
+        
         
 endmodule
 
