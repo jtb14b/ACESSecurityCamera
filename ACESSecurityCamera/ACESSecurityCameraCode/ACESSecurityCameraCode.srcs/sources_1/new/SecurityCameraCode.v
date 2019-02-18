@@ -35,47 +35,37 @@ module SecurityCameraCode
      (
       input        clk,
       input        uart_tx_in,
-      output wire [7:0] led
+      output wire [7:0] led,
+      output wire [7:0] ja
       );
       
-      wire MTRL;
-      wire MTRR;
-      wire MTRU;
-      wire MTRD;
-      wire MTRZI;
-      wire MTRZO;
-      wire UNKNOWN;
+      wire MTR;
+      wire [7:0] MESSAGE;
       
       wire sclk;
       wire SS;
       wire MOSI;
       
+      wire [7:0] dummy;
+      
       user_input UI(
         .clk(clk),
         .uart_tx_in(uart_tx_in),
-        .MTRL(MTRL),
-        .MTRR(MTRR),
-        .MTRU(MTRU),
-        .MTRD(MTRD),
-        .MTRZI(MTRZI),
-        .MTRZO(MTRZO),
-        .UNKNOWN(UNKNOWN)
+        .MTR(MTR),
+        .MESSAGE(MESSAGE),
+        .DEBUG(dummy)
         );
         
       motor_control MC(
-        .MTRL(MTRL),
-        .MTRR(MTRR),
-        .MTRU(MTRU),
-        .MTRD(MTRD),
-        .MTRZI(MTRZI),
-        .MTRZO(MTRZO),
+        .MTR(MTR),
+        .MESSAGE(MESSAGE),
         
         .clk(clk),
-        .led(led),
+        .DEBUG(led),
         
-        .sclk(sclk),
-        .SS(SS),
-        .MOSI(MOSI)
+        .sclk(ja[0]),
+        .SS(ja[1]),
+        .MOSI(ja[2])
         );
         
         

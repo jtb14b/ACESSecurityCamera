@@ -40,13 +40,16 @@ module user_input
      (
       input         clk,
       input         uart_tx_in,
-      output  reg   MTRL,
+   /*   output  reg   MTRL,
       output  reg   MTRR,
       output  reg   MTRU,
       output  reg   MTRD,
       output  reg   MTRZI,
       output  reg   MTRZO,
-      output  reg   UNKNOWN
+      output  reg   UNKNOWN, */
+      output  reg   MTR,
+      output  reg [7:0] MESSAGE,
+      output  reg [7:0] DEBUG
       );
     
   parameter s_IDLE         = 3'b000;
@@ -182,16 +185,20 @@ module user_input
 
    
    always @ (posedge r_Rx_DV) begin
-        //led <= r_Rx_Byte;
-        MTRL <= 0;
+        //DEBUG <= r_Rx_Byte;
+    /*    MTRL <= 0;
         MTRR <= 0;
         MTRU <= 0;
         MTRD <= 0;
         MTRZI <= 0;
         MTRZO <= 0;
-        UNKNOWN <= 0;
+        UNKNOWN <= 0;*/
         
-        case (r_Rx_Byte)
+       // MTR <= 0;
+        
+        MESSAGE <=r_Rx_Byte;
+        
+      /*  case (r_Rx_Byte)
             8'h00:
                 MTRL <= 1;
             8'h01:
@@ -206,7 +213,19 @@ module user_input
                 MTRZO <= 1;
             default:
                 UNKNOWN <= 1;
-        endcase
+        endcase */
+        
+        if(r_Rx_Byte == 8'h00 || r_Rx_Byte == 8'h01 || r_Rx_Byte == 8'h02 || r_Rx_Byte == 8'h03 || r_Rx_Byte == 8'h04 || r_Rx_Byte == 8'h05) begin
+            MTR <= 1;
+        end else begin
+            MTR <= 0;
+        end;
+   end
+   
+   always @ (MTR) begin
+   DEBUG[0] <= MTR;
+    DEBUG[1] <= MTR;
+    DEBUG[2] <= MTR;
    end
 
 endmodule
