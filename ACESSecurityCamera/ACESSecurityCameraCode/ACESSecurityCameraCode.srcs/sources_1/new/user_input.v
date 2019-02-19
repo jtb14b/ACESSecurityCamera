@@ -194,7 +194,7 @@ module user_input
         MTRZO <= 0;
         UNKNOWN <= 0;*/
         
-       // MTR <= 0;
+        MTR <= 0;
         
         MESSAGE <=r_Rx_Byte;
         
@@ -217,9 +217,7 @@ module user_input
         
         if(r_Rx_Byte == 8'h00 || r_Rx_Byte == 8'h01 || r_Rx_Byte == 8'h02 || r_Rx_Byte == 8'h03 || r_Rx_Byte == 8'h04 || r_Rx_Byte == 8'h05) begin
             MTR <= 1;
-        end else begin
-            MTR <= 0;
-        end;
+        end 
    end
    
    always @ (MTR) begin
