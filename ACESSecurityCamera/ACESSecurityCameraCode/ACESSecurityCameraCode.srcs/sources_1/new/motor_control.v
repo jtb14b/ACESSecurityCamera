@@ -75,7 +75,7 @@ module motor_control(
         led[5] <= MTRZO;
     end */
     
-    always @ (posedge MTR or posedge done) begin
+  /*  always @ (posedge MTR or posedge done) begin
         //start <= ~done; //start <= 1;
         
         DEBUG <= MESSAGE;
@@ -84,6 +84,18 @@ module motor_control(
             start <= 0;
         end else begin
             start <= 1;
+        end
+    end */
+    
+    always @ (MESSAGE) begin
+        DEBUG <= MESSAGE;
+        if(MTR) begin
+            DEBUG <= MESSAGE;
+            if (done) begin
+                start <=0;
+            end else begin
+                start <= 1;
+            end
         end
     end
     

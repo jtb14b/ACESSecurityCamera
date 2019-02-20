@@ -173,6 +173,7 @@ module user_input
           begin
             r_SM_Main <= s_IDLE;
             r_Rx_DV   <= 1'b0;
+   //         MTR <= 1'b0;
           end
          
          
@@ -194,7 +195,9 @@ module user_input
         MTRZO <= 0;
         UNKNOWN <= 0;*/
         
-        MTR <= 0;
+        //MTR <= 0;
+        MTR = 1'b0;
+        DEBUG[3] = 0;
         
         MESSAGE <=r_Rx_Byte;
         
@@ -216,12 +219,13 @@ module user_input
         endcase */
         
         if(r_Rx_Byte == 8'h00 || r_Rx_Byte == 8'h01 || r_Rx_Byte == 8'h02 || r_Rx_Byte == 8'h03 || r_Rx_Byte == 8'h04 || r_Rx_Byte == 8'h05) begin
-            MTR <= 1;
+            MTR = 1'b1;
+            DEBUG[3] = 1;
         end 
    end
    
    always @ (MTR) begin
-   DEBUG[0] <= MTR;
+    DEBUG[0] <= MTR;
     DEBUG[1] <= MTR;
     DEBUG[2] <= MTR;
    end
