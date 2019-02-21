@@ -88,14 +88,11 @@ module motor_control(
     end */
     
     always @ (MESSAGE) begin
-        DEBUG <= MESSAGE;
-        if(MTR) begin
+        DEBUG <= 8'h00;
+        if(MESSAGE == 8'h00 || MESSAGE == 8'h01 || MESSAGE == 8'h02 || MESSAGE == 8'h03 || MESSAGE == 8'h04 || MESSAGE == 8'h05) begin
             DEBUG <= MESSAGE;
-            if (done) begin
-                start <=0;
-            end else begin
-                start <= 1;
-            end
+            start = 1'b0;
+            start = 1'b1;
         end
     end
     
