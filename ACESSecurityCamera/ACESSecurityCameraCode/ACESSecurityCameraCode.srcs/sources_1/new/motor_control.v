@@ -40,10 +40,10 @@ module motor_control(
     output MOSI
     );
     
-    reg rstb = 1;
+ /*   reg rstb = 1;
     reg mlb = 0; //NEEDS UPDATE
     reg start; 
-    reg [1:0] cdiv = 0;
+    reg [1:0] cdiv = 3;
     reg MISO = 0; //Probably
     
     wire done;
@@ -62,9 +62,40 @@ module motor_control(
         .dout(MOSI),
         .done(done),
         .rdata(rdata)
+        ); */
+       
+    reg rst = 0;
+    reg send = 0;
+    reg MISO = 0;
+    wire done;
+    
+    reg dummy_clk = 0;
+    reg dummy_clk2 = 0;
+    reg dummy_clk3 = 0;
+     
+    spi_master SPIM(
+        .clk(dummy_clk3),
+        .rst(rst),
+        .data_in(MESSAGE),
+        .MISO(MISO),
+        .send(send),
+        .MOSI(MOSI),
+        .SCLK(sclk),
+        .SS(SS),
+        .done(done)
         );
-        
-        
+            
+    always @ (posedge clk) begin
+        dummy_clk = ~dummy_clk;
+    end
+    
+    always @ (posedge dummy_clk) begin
+        dummy_clk2 = ~dummy_clk2;
+    end
+    
+    always @ (posedge dummy_clk2) begin
+        dummy_clk3 = ~dummy_clk3;
+    end
     
  /*   always @ (MTRL or MTRR or MTRU or MTRD or MTRZI or MTRZO) begin
         led[0] <= MTRL;
@@ -88,11 +119,19 @@ module motor_control(
     end */
     
     always @ (MESSAGE) begin
-        DEBUG <= 8'h00;
+        DEBUG = 8'h00;
         if(MESSAGE == 8'h00 || MESSAGE == 8'h01 || MESSAGE == 8'h02 || MESSAGE == 8'h03 || MESSAGE == 8'h04 || MESSAGE == 8'h05) begin
-            DEBUG <= MESSAGE;
+           // start = 1'b0;
+            DEBUG = MESSAGE;
+          /*  start = 1'b0;
             start = 1'b0;
-            start = 1'b1;
+            start = 1'b0;
+            start = 1'b0;
+            start = 1'b0;
+            start = 1'b0;
+            start = 1'b1; */
+            send = 0;
+            send = 1;
         end
     end
     
