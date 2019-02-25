@@ -1,4 +1,4 @@
-/*
+
 #include "pins_arduino.h"
 
 char buf [100];
@@ -11,6 +11,7 @@ void setup (void)
 
  // have to send on master in, *slave out*
  pinMode(MISO, OUTPUT);
+ 
  
  // turn on SPI in slave mode
  SPCR |= _BV(SPE);
@@ -38,6 +39,18 @@ byte c = SPDR;
      process_it = true;
      
    }  // end of room available
+
+  
+
+  if(c == 'A' || c == 'B' || c == 'C' || c == 0x41 || c == 0x42 || c == 0x43)
+   {
+     Serial.println("Way to go\n");
+   }
+   else
+   {
+     Serial.println("Nope\n");
+   }
+   Serial.println("Let's try again\n");
 }
 
 // main loop - wait for flag set in interrupt routine
@@ -45,13 +58,20 @@ void loop (void)
 {
  if (process_it)
    {
-   buf [pos] = 0;  
+   buf [pos] = 0;
+
+   
+   
    Serial.println (buf);
    pos = 0;
    process_it = false;
    }  // end of flag set
    
-}  // end of loop  */
+}  // end of loop  
+
+
+
+/*
 #include <SPI.h>
 
 char buf [100];

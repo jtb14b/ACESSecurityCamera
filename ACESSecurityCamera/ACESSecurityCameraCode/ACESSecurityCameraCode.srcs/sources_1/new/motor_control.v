@@ -118,22 +118,31 @@ module motor_control(
         end
     end */
     
-    always @ (MESSAGE) begin
+    always @ (MESSAGE or done) begin
         DEBUG = 8'h00;
-        if(MESSAGE == 8'h00 || MESSAGE == 8'h01 || MESSAGE == 8'h02 || MESSAGE == 8'h03 || MESSAGE == 8'h04 || MESSAGE == 8'h05) begin
+        //if(MESSAGE == 8'h00 || MESSAGE == 8'h01 || MESSAGE == 8'h02 || MESSAGE == 8'h03 || MESSAGE == 8'h04 || MESSAGE == 8'h05) begin
+        if(MESSAGE == 8'h41 || MESSAGE == 8'h42 || MESSAGE == 8'h43 || MESSAGE == 8'h44 || MESSAGE == 8'h45 || MESSAGE == 8'h46) begin 
            // start = 1'b0;
             DEBUG = MESSAGE;
-          /*  start = 1'b0;
-            start = 1'b0;
-            start = 1'b0;
-            start = 1'b0;
-            start = 1'b0;
-            start = 1'b0;
-            start = 1'b1; */
+          
+            send = 0;
+            send = 0;
+            send = 0;
+            send = 0;
+            send = 0;
             send = 0;
             send = 1;
+            send = 1;
+            send = 1;
+            send = 1;
+            send = 1;
+            send = 1;
+            send = 1; 
+        
+            
         end
     end
+    
     
     
     

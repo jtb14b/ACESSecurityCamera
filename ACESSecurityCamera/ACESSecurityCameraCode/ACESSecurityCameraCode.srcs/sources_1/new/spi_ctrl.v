@@ -24,7 +24,7 @@ module spi_ctrl(
         Wait = 3'b100;
 
     reg [2:0] cstate, nstate;
-    reg [2:0] count;
+    reg [4:0] count; //!!!!!!!!!!!!!!
     reg clk_en;
 
     // Only output the clock when needed
@@ -39,11 +39,11 @@ module spi_ctrl(
 
     always @(negedge clk or posedge rst) begin
         if(rst)
-            count = 3'b111;
+            count = 5'b11111; //!!!!!!!!!!!!
         else if (cstate == Shift)
             count = count + 1;
         else
-            count = 3'b111;
+            count = 5'b11111; //!!!!!!!!!!!!!
     end
 
     always @(*) begin
@@ -76,7 +76,7 @@ module spi_ctrl(
                 {shift_en,load,done,SS} = 4'b1000;
                 clk_en = 1'b1;
 
-                if(count == 3'b111)
+                if(count == 5'b11111) //!!!!!!!!!!!!
                     nstate = Done;
                 else
                     nstate = cstate;
