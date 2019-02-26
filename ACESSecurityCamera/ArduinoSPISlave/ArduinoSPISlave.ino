@@ -50,7 +50,7 @@ byte c = SPDR;
    {
      Serial.println("Nope\n");
    }
-   Serial.println("Let's try again\n");
+
 }
 
 // main loop - wait for flag set in interrupt routine

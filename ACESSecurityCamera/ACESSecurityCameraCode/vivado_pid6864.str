@@ -2726,3 +2726,241 @@ selectCodeEditor("motor_control.v", 80, 112); // ce (w, ck)
 // TclEventType: DG_GRAPH_GENERATED
 // Elapsed time: 213 seconds
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 5); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 5:01:55 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A79380B 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 59 MB. Current time: 2/25/19 5:31:55 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 6:01:55 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 6:31:56 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 7:01:56 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 7:31:56 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 8:01:57 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 8:31:57 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 9:01:58 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 9:31:58 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 10:01:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 10:31:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 11:02:00 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/25/19 11:32:00 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 12:02:00 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 12:32:01 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 1:02:01 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 1:32:02 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 2:02:02 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 2:32:02 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 3:02:03 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 3:32:03 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 4:02:04 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 4:32:04 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 5:02:04 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 5:32:05 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 6:02:05 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 6:32:06 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 7:02:06 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 7:32:07 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 8:02:07 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 8:32:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 9:02:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 9:32:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 10:02:09 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 10:32:09 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 11:02:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 11:32:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 112 MB. Current time: 2/26/19 12:02:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 12:32:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 60 MB. Current time: 2/26/19 1:02:11 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 75096 seconds
+selectCodeEditor("spi_ctrl.v", 980, 317); // ce (w, ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1693.996 ; gain = 0.074 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 133 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_master.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 59 MB. Current time: 2/26/19 1:32:12 PM CST
+// Elapsed time: 57 seconds
+selectCodeEditor("motor_control.v", 149, 312); // ce (w, ck)
+selectCodeEditor("motor_control.v", 144, 180); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Tue Feb 26 13:33:02 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 44 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_master.v", 3); // k (j, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("spi_master.v", 148, 231); // ce (w, ck)
+selectCodeEditor("spi_master.v", 220, 243); // ce (w, ck)
+selectCodeEditor("spi_master.v", 146, 228); // ce (w, ck)
+selectCodeEditor("spi_master.v", 221, 245); // ce (w, ck)
+selectCodeEditor("spi_master.v", 158, 236); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("motor_control.v", 154, 297); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("motor_control.v", 44, 427); // ce (w, ck)
+selectCodeEditor("motor_control.v", 47, 413); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Feb 26 13:36:17 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 55 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Tue Feb 26 13:37:14 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net MC/send has multiple drivers: MC/send_reg/Q, and MC/send_reg__0/Q.. ]", 14, false); // ah (O, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("motor_control.v", 174, 163); // ce (w, ck)
+selectCodeEditor("motor_control.v", 148, 161); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("motor_control.v", 139, 267); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("motor_control.v", 56, 426); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_master.v", 3); // k (j, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("spi_master.v", 254, 252); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 5); // k (j, ck)
+// Elapsed time: 82 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+selectCodeEditor("motor_control.v", 374, 339); // ce (w, ck)
+selectCodeEditor("motor_control.v", 81, 299); // ce (w, ck)
+// Elapsed time: 52 seconds
+selectCodeEditor("motor_control.v", 108, 214); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_master.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 5); // k (j, ck)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+// Elapsed time: 69 seconds
+selectCodeEditor("motor_control.v", 99, 315); // ce (w, ck)
+selectCodeEditor("motor_control.v", 81, 319); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("motor_control.v", 146, 193); // ce (w, ck)
+// Elapsed time: 156 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("user_input.v", 110, 223); // ce (w, ck)
+selectCodeEditor("user_input.v", 388, 346); // ce (w, ck)
+selectCodeEditor("user_input.v", 94, 78); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+selectCodeEditor("user_input.v", 183, 80); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 5); // k (j, ck)
+selectCodeEditor("spi_ctrl.v", 285, 317, false, false, true, false, false); // ce (w, ck) - Alt Key
+selectCodeEditor("spi_ctrl.v", 89, 163); // ce (w, ck)
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 5); // k (j, ck)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
