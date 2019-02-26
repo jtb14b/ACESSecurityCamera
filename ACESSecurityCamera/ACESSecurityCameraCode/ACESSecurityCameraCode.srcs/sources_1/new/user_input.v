@@ -49,6 +49,7 @@ module user_input
       output  reg   UNKNOWN, */
       output  reg   MTR,
       output  reg [7:0] MESSAGE,
+      output        r_Rx_DV,
       output  reg [7:0] DEBUG
       );
     

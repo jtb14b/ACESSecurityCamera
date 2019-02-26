@@ -18,6 +18,8 @@ module spi_shift(
 	reg [7:0] data;
 	assign s_out = data[7];
 	
+	
+	
     always @(negedge clk or posedge rst) begin
         if (rst)
 			data = 8'b0;

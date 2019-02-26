@@ -41,6 +41,7 @@ module SecurityCameraCode
       
       wire MTR;
       wire [7:0] MESSAGE;
+      wire NEWMESS;
       
       wire sclk;
       wire SS;
@@ -53,12 +54,14 @@ module SecurityCameraCode
         .uart_tx_in(uart_tx_in),
         .MTR(MTR),
         .MESSAGE(MESSAGE),
+        .r_Rx_DV(NEWMESS),
         .DEBUG(dummy)
         );
         
       motor_control MC(
         .MTR(MTR),
         .MESSAGE(MESSAGE),
+        .NEWMESS(NEWMESS),
         
         .clk(clk),
         .DEBUG(led),

@@ -30,6 +30,7 @@ module motor_control(
     
     input MTR,
     input [7:0] MESSAGE,
+    input NEWMESS,
     
     input clk,
     output reg [7:0] DEBUG,
@@ -118,7 +119,7 @@ module motor_control(
         end
     end */
     
-    always @ (MESSAGE, posedge done) begin
+ /*   always @ (MESSAGE, posedge done) begin
         DEBUG = 8'h00;
         //if(MESSAGE == 8'h00 || MESSAGE == 8'h01 || MESSAGE == 8'h02 || MESSAGE == 8'h03 || MESSAGE == 8'h04 || MESSAGE == 8'h05) begin
         if(MESSAGE == 8'h41 || MESSAGE == 8'h42 || MESSAGE == 8'h43 || MESSAGE == 8'h44 || MESSAGE == 8'h45 || MESSAGE == 8'h46) begin 
@@ -136,8 +137,54 @@ module motor_control(
     
     always @ (posedge done) begin
         send = 0;
+    end */
+    
+    
+    
+    localparam Idle = 1'b0;
+    localparam Send = 1'b1;
+        
+    reg cstate = Idle;
+    reg nstate;
+    
+    always @ (posedge clk) begin
+        cstate = nstate;
     end
     
-    always 
+    always @ (NEWMESS or done) begin
+        //DEBUG <= MESSAGE;
+        case(cstate)
+        
+            Idle: begin
+                send = 1'b0;
+                
+                if(NEWMESS) 
+                    nstate = Send;
+                else
+                    nstate = cstate;
+            end
+            
+            Send: begin
+                send = 1'b1;
+                
+                if(done)
+                    nstate = Idle;
+                else
+                    nstate = cstate;
+            end
+            
+            default: begin
+                send = 1'b0;
+                
+                nstate = Idle;
+            end
+        endcase
+    end
+    
+    always @ (*) begin
+        DEBUG[0] <= cstate;
+        DEBUG[1] <= send;
+        DEBUG[2] <= done;
+    end
     
 endmodule
