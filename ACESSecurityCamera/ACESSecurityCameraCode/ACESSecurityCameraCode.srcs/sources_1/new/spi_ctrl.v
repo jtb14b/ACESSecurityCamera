@@ -86,10 +86,11 @@ module spi_ctrl(
                 {shift_en,load,done,SS} = 4'b0011;
                 clk_en = 1'b0;
 
-                if(send)
+            /*    if(send)
                     nstate = Load;
                 else
-                    nstate = cstate;
+                    nstate = cstate; */
+                nstate = Init;
             end
 
             default : begin
