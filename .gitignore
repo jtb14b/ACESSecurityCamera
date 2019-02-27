@@ -77,5 +77,5 @@ ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs
 ACESSecurityCamera/__pycache__
 ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.cache
 */vivado_pid6864.str
-*/vivado.jou
-*/vivado.log
+*.jou
+*.log
