@@ -44,11 +44,11 @@ byte c = SPDR;
 
   if(c == 'A' || c == 'B' || c == 'C' || c == 0x41 || c == 0x42 || c == 0x43)
    {
-     Serial.println("Way to go!\n");
+     Serial.println("Way to go!\nWe received: ");
    }
    else
    {
-     Serial.println("Nope!\n");
+     Serial.println("Nope!\nWe received: ");
    }
 
 }
