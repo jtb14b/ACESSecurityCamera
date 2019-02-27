@@ -71,6 +71,12 @@ module SecurityCameraCode
         .MOSI(ja[2])
         );
         
+        assign ja[3] = led[0];
+        assign ja[4] = led[1];
+        assign ja[5] = led[2];
+        assign ja[6] = led[3];
+        assign ja[7] = led[4];
+        
         
         
         

@@ -21,12 +21,6 @@
 
 
 module motor_control(
-/*    input MTRL,     //Flag for panning left
-    input MTRR,     //Flag for panning right
-    input MTRU,     //Flag for tilting up
-    input MTRD,     //Flag for tilting down
-    input MTRZI,    //Flag for zooming in
-    input MTRZO,    //Flag for zooming out */
     
     input MTR,
     input [7:0] MESSAGE,
@@ -41,29 +35,6 @@ module motor_control(
     output MOSI
     );
     
- /*   reg rstb = 1;
-    reg mlb = 0; //NEEDS UPDATE
-    reg start; 
-    reg [1:0] cdiv = 3;
-    reg MISO = 0; //Probably
-    
-    wire done;
-    wire [7:0] rdata;
-    
-    spi_master SPIM(
-        .rstb(rstb),
-        .clk(clk),
-        .mlb(mlb),
-        .start(start),
-        .tdat(MESSAGE),
-        .cdiv(cdiv),
-        .din(MISO),
-        .ss(SS),
-        .sck(sclk),
-        .dout(MOSI),
-        .done(done),
-        .rdata(rdata)
-        ); */
        
     reg rst = 0;
     reg send = 0;
@@ -98,56 +69,18 @@ module motor_control(
         dummy_clk3 = ~dummy_clk3;
     end
     
- /*   always @ (MTRL or MTRR or MTRU or MTRD or MTRZI or MTRZO) begin
-        led[0] <= MTRL;
-        led[1] <= MTRR;
-        led[2] <= MTRU;
-        led[3] <= MTRD;
-        led[4] <= MTRZI;
-        led[5] <= MTRZO;
-    end */
+
     
-  /*  always @ (posedge MTR or posedge done) begin
-        //start <= ~done; //start <= 1;
+    
+    
+    localparam [1:0] Idle = 2'b00;
+    localparam [1:0] Send = 2'b01;
+    localparam [1:0] Cleanup = 2'b10;
         
-        DEBUG <= MESSAGE;
-        
-        if (done) begin
-            start <= 0;
-        end else begin
-            start <= 1;
-        end
-    end */
+    reg [1:0] cstate = Idle;
+    reg [1:0] nstate;
     
- /*   always @ (MESSAGE, posedge done) begin
-        DEBUG = 8'h00;
-        //if(MESSAGE == 8'h00 || MESSAGE == 8'h01 || MESSAGE == 8'h02 || MESSAGE == 8'h03 || MESSAGE == 8'h04 || MESSAGE == 8'h05) begin
-        if(MESSAGE == 8'h41 || MESSAGE == 8'h42 || MESSAGE == 8'h43 || MESSAGE == 8'h44 || MESSAGE == 8'h45 || MESSAGE == 8'h46) begin 
-           // start = 1'b0;
-            DEBUG = MESSAGE;
-            
-        end
-        
-        if(done)
-            send=0;
-        else if
-            
-        
-    end
-    
-    always @ (posedge done) begin
-        send = 0;
-    end */
-    
-    
-    
-    localparam Idle = 1'b0;
-    localparam Send = 1'b1;
-        
-    reg cstate = Idle;
-    reg nstate;
-    
-    always @ (posedge clk) begin
+    always @ (posedge dummy_clk3) begin
         cstate = nstate;
     end
     
@@ -168,9 +101,15 @@ module motor_control(
                 send = 1'b1;
                 
                 if(done)
-                    nstate = Idle;
+                    nstate = Cleanup;
                 else
                     nstate = cstate;
+            end
+            
+            Cleanup: begin
+                send = 1'b0;
+                
+                nstate = Idle;
             end
             
             default: begin
@@ -182,9 +121,11 @@ module motor_control(
     end
     
     always @ (*) begin
-        DEBUG[0] <= cstate;
-        DEBUG[1] <= send;
-        DEBUG[2] <= done;
+        DEBUG[0] <= cstate[0];
+        DEBUG[1] <= cstate[1];
+        DEBUG[2] <= send;
+        DEBUG[3] <= done;
+        DEBUG[4] <= dummy_clk3;
     end
     
 endmodule
