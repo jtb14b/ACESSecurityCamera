@@ -580,3 +580,16 @@ launch_runs synth_1 -jobs 2
 wait_on_run synth_1
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
