@@ -4452,3 +4452,572 @@ dismissDialog("Program Device"); // bB (ck)
 // 'I' command handler elapsed time: 7 seconds
 dismissDialog("Program Device"); // bx (ck)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 2/27/19 4:02:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 2/27/19 4:32:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 5:02:09 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A79380B 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 5:32:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 6:02:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 6:32:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 7:02:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 7:32:11 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 8:02:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 8:32:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 9:02:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 9:32:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 10:02:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 10:32:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 11:02:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/27/19 11:32:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 12:02:15 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 12:32:15 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 1:02:16 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 1:32:16 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 2:02:17 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 2:32:17 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 3:02:17 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 3:32:18 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 4:02:18 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 4:32:19 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 5:02:19 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 5:32:19 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 6:02:20 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 6:32:21 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 7:02:21 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 7:32:21 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 8:02:22 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 8:32:22 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 9:02:23 AM CST
+// [GUI Memory]: 159 MB (+3396kb) [162:26:33]
+// [GUI Memory]: 169 MB (+1845kb) [162:26:48]
+// [GUI Memory]: 178 MB (+796kb) [162:27:03]
+// [GUI Memory]: 188 MB (+803kb) [162:27:18]
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 64502 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2614.805 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 9:32:23 AM CST
+// Elapsed time: 205 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+selectCodeEditor("SecurityCameraCode.v", 194, 418); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 202, 415); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+selectCodeEditor("user_input.v", 82, 398); // ce (w, ck)
+selectCodeEditor("user_input.v", 51, 294); // ce (w, ck)
+selectCodeEditor("user_input.v", 87, 382); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+selectCodeEditor("user_input.v", 72, 378); // ce (w, ck)
+selectCodeEditor("user_input.v", 140, 405); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 09:35:01 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 146 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 09:37:28 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 133 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Feb 28 09:39:41 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 74 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2618.922 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 222 seconds
+selectCodeEditor("SecurityCameraCode.v", 348, 169); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+// Elapsed time: 986 seconds
+selectCodeEditor("user_input.v", 557, 299); // ce (w, ck)
+selectCodeEditor("user_input.v", 194, 387); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 10:01:46 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 99 MB. Current time: 2/28/19 10:02:23 AM CST
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 80 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 10:03:07 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 131 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+selectCodeEditor("SecurityCameraCode.v", 116, 330); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 116, 330, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("SecurityCameraCode.v", 122, 175); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 122, 175, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 10:06:19 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 311 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 10:11:31 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 144 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Feb 28 10:13:56 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 114 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2620.133 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("SecurityCameraCode.v", 562, 300); // ce (w, ck)
+// Elapsed time: 100 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+selectCodeEditor("motor_control.v", 302, 418); // ce (w, ck)
+selectCodeEditor("motor_control.v", 197, 417); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("motor_control.v", 209, 192); // ce (w, ck)
+selectCodeEditor("motor_control.v", 158, 191); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+// Elapsed time: 52 seconds
+selectCodeEditor("motor_control.v", 210, 416); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("SecurityCameraCode.v", 110, 262); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 110, 262, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("SecurityCameraCode.v", 123, 420); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 123, 420, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+selectCodeEditor("motor_control.v", 55, 401); // ce (w, ck)
+typeControlKey((HResource) null, "motor_control.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+selectCodeEditor("SecurityCameraCode.v", 97, 404); // ce (w, ck)
+typeControlKey((HResource) null, "SecurityCameraCode.v", 'v'); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 78, 334); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 77, 342); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 78, 380); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 92, 406); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 79, 413); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 77, 446); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 82, 467); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 83, 487); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+selectCodeEditor("motor_control.v", 162, 350); // ce (w, ck)
+typeControlKey((HResource) null, "motor_control.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+selectCodeEditor("SecurityCameraCode.v", 157, 294); // ce (w, ck)
+typeControlKey((HResource) null, "SecurityCameraCode.v", 'v'); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 76, 331); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 63, 339); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 78, 344); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 93, 190); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("SecurityCameraCode.v", 99, 417); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 99, 417, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("SecurityCameraCode.v", 201, 399); // ce (w, ck)
+typeControlKey((HResource) null, "SecurityCameraCode.v", 'c'); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 174, 243); // ce (w, ck)
+typeControlKey((HResource) null, "SecurityCameraCode.v", 'v'); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 96, 295); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 97, 320); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 10:22:15 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 44 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 10:23:00 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 268 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Feb 28 10:27:29 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 81 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2622.473 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 60 seconds
+selectCodeEditor("SecurityCameraCode.v", 246, 181); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 163, 210); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 10:30:19 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 2/28/19 10:32:24 AM CST
+// Elapsed time: 248 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Feb 28 10:34:29 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 215 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Feb 28 10:38:04 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 102 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2623.395 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 320 seconds
+selectCodeEditor("SecurityCameraCode.v", 290, 92); // ce (w, ck)

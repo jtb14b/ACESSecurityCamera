@@ -181,15 +181,19 @@ module user_input
    
    always @ (posedge r_Rx_DV) begin
         MTR = 1'b0;
-        DEBUG[3] = 0;
+       // DEBUG[3] = 0;
         
         MESSAGE <=r_Rx_Byte;
         
         if(r_Rx_Byte == 8'h00 || r_Rx_Byte == 8'h01 || r_Rx_Byte == 8'h02 || r_Rx_Byte == 8'h03 || r_Rx_Byte == 8'h04 || r_Rx_Byte == 8'h05) begin
             MTR = 1'b1;
-            DEBUG[3] = 1;
+            //DEBUG[3] = 1;
         end 
    end
+   
+   always @ (MESSAGE)
+    DEBUG <= MESSAGE;
+   
    
 
 endmodule

@@ -49,8 +49,12 @@ module SecurityCameraCode
       
       wire [7:0] dummy;
       
+      reg dummy_clk = 0;
+      reg dummy_clk2 = 0;
+      reg dummy_clk3 = 0;
+      
       user_input UI(
-        .clk(clk),
+        .clk(clk), //!!!!!!!!!!!!
         .uart_tx_in(uart_tx_in),
         .MTR(MTR),
         .MESSAGE(MESSAGE),
@@ -63,7 +67,7 @@ module SecurityCameraCode
         .MESSAGE(MESSAGE),
         .NEWMESS(NEWMESS),
         
-        .clk(clk),
+        .clk(dummy_clk3), //!!!!!!!!!!!!!!!!
         .DEBUG(led),
         
         .sclk(ja[0]),
@@ -75,10 +79,22 @@ module SecurityCameraCode
         assign ja[4] = led[1];
         assign ja[5] = led[2];
         assign ja[6] = led[3];
-        assign ja[7] = led[4];
+        assign ja[7] = dummy[0];
         
         
         
+        
+        always @ (posedge clk) begin
+            dummy_clk = ~dummy_clk;
+        end
+            
+        always @ (posedge dummy_clk) begin
+            dummy_clk2 = ~dummy_clk2;
+        end
+            
+        always @ (posedge dummy_clk2) begin
+            dummy_clk3 = ~dummy_clk3;
+        end
         
         
 endmodule

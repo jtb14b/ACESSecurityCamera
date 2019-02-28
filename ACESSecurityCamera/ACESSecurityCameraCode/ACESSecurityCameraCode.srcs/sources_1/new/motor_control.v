@@ -46,7 +46,7 @@ module motor_control(
     reg dummy_clk3 = 0;
      
     spi_master SPIM(
-        .clk(dummy_clk3),
+        .clk(clk), //!!!!!!!!!!!!!!!!
         .rst(rst),
         .data_in(MESSAGE),
         .MISO(MISO),
@@ -80,7 +80,7 @@ module motor_control(
     reg [1:0] cstate = Idle;
     reg [1:0] nstate;
     
-    always @ (posedge dummy_clk3) begin
+    always @ (posedge clk) begin //!!!!!!!!!!!!!!!!!!!!
         cstate = nstate;
     end
     
@@ -125,7 +125,7 @@ module motor_control(
         DEBUG[1] <= cstate[1];
         DEBUG[2] <= send;
         DEBUG[3] <= done;
-        DEBUG[4] <= dummy_clk3;
+        DEBUG[4] <= clk; //!!!!!!!!!!!!!!
     end
     
 endmodule
