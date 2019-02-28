@@ -49,12 +49,16 @@ module SecurityCameraCode
       
       wire [7:0] dummy;
       
+      wire temp_alarm;
+      
       reg dummy_clk = 0;
       reg dummy_clk2 = 0;
       reg dummy_clk3 = 0;
       
+      wire CLK;
+      
       user_input UI(
-        .clk(clk), //!!!!!!!!!!!!
+        .clk(CLK), //!!!!!!!!!!!!
         .uart_tx_in(uart_tx_in),
         .MTR(MTR),
         .MESSAGE(MESSAGE),
@@ -75,16 +79,23 @@ module SecurityCameraCode
         .MOSI(ja[2])
         );
         
+        xadc_wiz_0 TEMPMON(
+            .dclk_in(clk),
+            .user_temp_alarm_out(temp_alarm)
+            );
+        
         assign ja[3] = led[0];
         assign ja[4] = led[1];
         assign ja[5] = led[2];
         assign ja[6] = led[3];
         assign ja[7] = dummy[0];
         
+        assign CLK = clk & ~temp_alarm;
         
         
         
-        always @ (posedge clk) begin
+        
+        always @ (posedge CLK) begin
             dummy_clk = ~dummy_clk;
         end
             
