@@ -54,6 +54,8 @@ module SecurityCameraCode
       reg dummy_clk = 0;
       reg dummy_clk2 = 0;
       reg dummy_clk3 = 0;
+      reg dummy_clk4 = 0;
+      reg dummy_clk5 = 0;
       
       wire CLK;
       
@@ -71,7 +73,7 @@ module SecurityCameraCode
         .MESSAGE(MESSAGE),
         .NEWMESS(NEWMESS),
         
-        .clk(dummy_clk3), //!!!!!!!!!!!!!!!!
+        .clk(dummy_clk5), //!!!!!!!!!!!!!!!!
         .DEBUG(led),
         
         .sclk(ja[0]),
@@ -105,6 +107,14 @@ module SecurityCameraCode
             
         always @ (posedge dummy_clk2) begin
             dummy_clk3 = ~dummy_clk3;
+        end
+        
+        always @ (posedge dummy_clk3) begin
+            dummy_clk4 = ~dummy_clk4;
+        end
+        
+        always @ (posedge dummy_clk4) begin
+            dummy_clk5 = ~dummy_clk5;
         end
         
         

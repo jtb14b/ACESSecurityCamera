@@ -23,6 +23,8 @@ void loop (void)
  for (const char * p = "Hello, world!\n" ; c = *p; p++)
    SPI.transfer (c);
 
+//SPI.transfer(0x43);
+
  // disable Slave Select
  digitalWrite(SS, HIGH);
 

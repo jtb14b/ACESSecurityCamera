@@ -1,4 +1,4 @@
-
+/*
 #include "pins_arduino.h"
 
 char buf [100];
@@ -68,10 +68,10 @@ void loop (void)
    }  // end of flag set
    
 }  // end of loop  
+*/
 
 
 
-/*
 #include <SPI.h>
 
 char buf [100];
@@ -80,7 +80,7 @@ volatile bool process_it;
 
 void setup (void)
 {
-  Serial.begin (9600);   // debugging
+  Serial.begin (115200);// debugging
 
   // turn on SPI in slave mode
   SPCR |= bit (SPE);
@@ -102,7 +102,8 @@ void setup (void)
 ISR (SPI_STC_vect)
 {
 byte c = SPDR;  // grab byte from SPI Data Register
-
+Serial.println("Received byte: ");
+Serial.println(c);
   // add to buffer if room
   if (pos < sizeof buf)
     {
@@ -126,4 +127,4 @@ void loop (void)
     process_it = false;
     }  // end of flag set
 
-}  // end of loop */
+}  // end of loop 
