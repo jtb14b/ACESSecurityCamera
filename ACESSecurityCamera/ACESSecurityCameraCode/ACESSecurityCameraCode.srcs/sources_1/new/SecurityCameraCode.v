@@ -60,7 +60,7 @@ module SecurityCameraCode
       wire CLK;
       
       user_input UI(
-        .clk(CLK), //!!!!!!!!!!!!
+        .clk(dummy_clk5), //!!!!!!!!!!!!
         .uart_tx_in(uart_tx_in),
         .MTR(MTR),
         .MESSAGE(MESSAGE),

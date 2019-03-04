@@ -36,7 +36,7 @@
   
    
 module user_input 
-     #(parameter CLKS_PER_BIT = 869)
+     #(parameter CLKS_PER_BIT = 28) //Changed from 869
      (
       input         clk,
       input         uart_tx_in,
