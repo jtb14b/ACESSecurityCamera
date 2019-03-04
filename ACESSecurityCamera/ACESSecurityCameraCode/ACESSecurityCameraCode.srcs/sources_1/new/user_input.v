@@ -43,6 +43,7 @@ module user_input
       output  reg   MTR,
       output  reg [7:0] MESSAGE,
       output        r_Rx_DV,
+      output   [7:0] IMMD,
       output  reg [7:0] DEBUG
       );
     
@@ -63,7 +64,11 @@ module user_input
   reg [2:0]     r_SM_Main     = 0;
   
 
+  localparam [7:0]
+    Daylight    = 8'h61, //a
+    LowLight    = 8'h62; //b
 
+  reg [7:0] IMMD = Daylight;
    
   // Purpose: Double-register the incoming data.
   // This allows it to be used in the UART RX Clock Domain.
@@ -73,10 +78,6 @@ module user_input
       r_Rx_Data_R <= uart_tx_in;
       r_Rx_Data   <= r_Rx_Data_R;
     end
-  
- 
-  
-  
    
   // Purpose: Control RX state machine
   always @(posedge clk)
@@ -185,14 +186,18 @@ module user_input
         
         MESSAGE <=r_Rx_Byte;
         
-        if(r_Rx_Byte == 8'h00 || r_Rx_Byte == 8'h01 || r_Rx_Byte == 8'h02 || r_Rx_Byte == 8'h03 || r_Rx_Byte == 8'h04 || r_Rx_Byte == 8'h05) begin
-            MTR = 1'b1;
+        if((r_Rx_Byte == Daylight) || (r_Rx_Byte == LowLight)) begin //expand as new modes are added
+            IMMD <= r_Rx_Byte;
+        end
+        
+     //   if(r_Rx_Byte == 8'h00 || r_Rx_Byte == 8'h01 || r_Rx_Byte == 8'h02 || r_Rx_Byte == 8'h03 || r_Rx_Byte == 8'h04 || r_Rx_Byte == 8'h05) begin
+     //       MTR = 1'b1;
             //DEBUG[3] = 1;
-        end 
+        //end 
    end
    
-   always @ (MESSAGE)
-    DEBUG <= MESSAGE;
+ //  always @ (MESSAGE)
+ //   DEBUG <= MESSAGE;
    
    
 

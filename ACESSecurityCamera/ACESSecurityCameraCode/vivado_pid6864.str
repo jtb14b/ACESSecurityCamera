@@ -6215,3 +6215,491 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging
 // Elapsed time: 29 seconds
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+// Elapsed time: 141 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectCodeEditor("spi_ctrl.v", 183, 358); // ce (w, ck)
+selectCodeEditor("spi_ctrl.v", 140, 339); // ce (w, ck)
+selectCodeEditor("spi_ctrl.v", 156, 281); // ce (w, ck)
+selectCodeEditor("spi_ctrl.v", 157, 286); // ce (w, ck)
+typeControlKey((HResource) null, "spi_ctrl.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+selectCodeEditor("imaging.v", 76, 432); // ce (w, ck)
+selectCodeEditor("imaging.v", 117, 414); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("imaging.v", 160, 433); // ce (w, ck)
+selectCodeEditor("imaging.v", 54, 354); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+selectCodeEditor("imaging.v", 82, 383); // ce (w, ck)
+selectCodeEditor("imaging.v", 159, 412); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 94 MB. Current time: 3/4/19 1:55:01 PM CST
+// Elapsed time: 111 seconds
+selectCodeEditor("imaging.v", 158, 383); // ce (w, ck)
+selectCodeEditor("imaging.v", 91, 383); // ce (w, ck)
+selectCodeEditor("imaging.v", 65, 395); // ce (w, ck)
+// Elapsed time: 96 seconds
+selectCodeEditor("imaging.v", 127, 432); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("imaging.v", 111, 417); // ce (w, ck)
+selectCodeEditor("imaging.v", 110, 395); // ce (w, ck)
+selectCodeEditor("imaging.v", 111, 379); // ce (w, ck)
+selectCodeEditor("imaging.v", 244, 432); // ce (w, ck)
+// Elapsed time: 116 seconds
+selectCodeEditor("imaging.v", 65, 482); // ce (w, ck)
+// Elapsed time: 294 seconds
+selectCodeEditor("imaging.v", 235, 410); // ce (w, ck)
+// Elapsed time: 70 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectCodeEditor("spi_ctrl.v", 50, 434); // ce (w, ck)
+typeControlKey((HResource) null, "spi_ctrl.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+selectCodeEditor("imaging.v", 70, 422); // ce (w, ck)
+selectCodeEditor("imaging.v", 86, 432); // ce (w, ck)
+selectCodeEditor("imaging.v", 81, 456); // ce (w, ck)
+selectCodeEditor("imaging.v", 81, 469); // ce (w, ck)
+selectCodeEditor("imaging.v", 51, 483); // ce (w, ck)
+selectCodeEditor("imaging.v", 271, 393); // ce (w, ck)
+selectCodeEditor("imaging.v", 84, 450); // ce (w, ck)
+selectCodeEditor("imaging.v", 82, 419); // ce (w, ck)
+selectCodeEditor("imaging.v", 144, 441); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectCodeEditor("spi_ctrl.v", 200, 435); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+selectCodeEditor("imaging.v", 135, 466); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("imaging.v", 242, 380); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'c'); // ce (w, ck)
+// Elapsed time: 53 seconds
+selectCodeEditor("imaging.v", 251, 460); // ce (w, ck)
+selectCodeEditor("imaging.v", 149, 340); // ce (w, ck)
+selectCodeEditor("imaging.v", 157, 362); // ce (w, ck)
+// Elapsed time: 189 seconds
+selectCodeEditor("imaging.v", 118, 479); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("imaging.v", 171, 482); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("imaging.v", 128, 488); // ce (w, ck)
+// Elapsed time: 363 seconds
+selectCodeEditor("imaging.v", 147, 370); // ce (w, ck)
+// Elapsed time: 196 seconds
+selectCodeEditor("imaging.v", 199, 387); // ce (w, ck)
+selectCodeEditor("imaging.v", 199, 386, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("imaging.v", 271, 402); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 93 MB. Current time: 3/4/19 2:25:01 PM CST
+// Elapsed time: 407 seconds
+selectCodeEditor("imaging.v", 159, 471); // ce (w, ck)
+selectCodeEditor("imaging.v", 141, 485); // ce (w, ck)
+// Elapsed time: 143 seconds
+selectCodeEditor("imaging.v", 123, 449); // ce (w, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("imaging.v", 193, 481); // ce (w, ck)
+// Elapsed time: 156 seconds
+selectCodeEditor("imaging.v", 108, 371); // ce (w, ck)
+selectCodeEditor("imaging.v", 78, 363); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+selectCodeEditor("imaging.v", 163, 377); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("imaging.v", 218, 387); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 78 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+// Elapsed time: 60 seconds
+selectCodeEditor("imaging.v", 266, 145); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("imaging.v", 250, 345); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("imaging.v", 358, 308); // ce (w, ck)
+selectCodeEditor("imaging.v", 278, 432); // ce (w, ck)
+selectCodeEditor("imaging.v", 274, 316); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("imaging.v", 252, 240); // ce (w, ck)
+selectCodeEditor("imaging.v", 303, 266); // ce (w, ck)
+selectCodeEditor("imaging.v", 191, 385); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 93 MB. Current time: 3/4/19 2:55:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 93 MB. Current time: 3/4/19 3:25:02 PM CST
+// Elapsed time: 3720 seconds
+selectCodeEditor("imaging.v", 144, 363); // ce (w, ck)
+// Elapsed time: 188 seconds
+selectCodeEditor("imaging.v", 207, 282); // ce (w, ck)
+selectCodeEditor("imaging.v", 180, 302); // ce (w, ck)
+selectCodeEditor("imaging.v", 200, 301); // ce (w, ck)
+// [GUI Memory]: 197 MB (+431kb) [264:45:03]
+// [GUI Memory]: 211 MB (+3345kb) [264:45:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 85 MB. Current time: 3/4/19 3:55:02 PM CST
+// Elapsed time: 539 seconds
+selectCodeEditor("imaging.v", 280, 328); // ce (w, ck)
+// Elapsed time: 84 seconds
+selectCodeEditor("imaging.v", 172, 306); // ce (w, ck)
+selectCodeEditor("imaging.v", 180, 300); // ce (w, ck)
+selectCodeEditor("imaging.v", 57, 188); // ce (w, ck)
+selectCodeEditor("imaging.v", 161, 397); // ce (w, ck)
+selectCodeEditor("imaging.v", 173, 431); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("imaging.v", 95, 63); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("imaging.v", 194, 338); // ce (w, ck)
+selectCodeEditor("imaging.v", 378, 318); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("imaging.v", 32, 300); // ce (w, ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("imaging.v", 83, 386); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("imaging.v", 115, 329); // ce (w, ck)
+// [GUI Memory]: 229 MB (+7909kb) [264:58:08]
+// Elapsed time: 12 seconds
+selectCodeEditor("imaging.v", 202, 416); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("imaging.v", 139, 400); // ce (w, ck)
+// Elapsed time: 61 seconds
+selectCodeEditor("imaging.v", 107, 346); // ce (w, ck)
+selectCodeEditor("imaging.v", 110, 350); // ce (w, ck)
+selectCodeEditor("imaging.v", 420, 351); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("imaging.v", 111, 379); // ce (w, ck)
+selectCodeEditor("imaging.v", 200, 453); // ce (w, ck)
+// Elapsed time: 58 seconds
+selectCodeEditor("imaging.v", 13, 261); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("imaging.v", 114, 157); // ce (w, ck)
+// Elapsed time: 72 seconds
+selectCodeEditor("imaging.v", 88, 116); // ce (w, ck)
+selectCodeEditor("imaging.v", 83, 134); // ce (w, ck)
+// Elapsed time: 70 seconds
+selectCodeEditor("imaging.v", 60, 401); // ce (w, ck)
+// Elapsed time: 359 seconds
+selectCodeEditor("imaging.v", 70, 383); // ce (w, ck)
+selectCodeEditor("imaging.v", 250, 226); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("SecurityCameraCode.v", 74, 244); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 48, 281); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 53, 278); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 37, 57); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 21, 276); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 28, 275); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 41, 201); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 40, 212); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("SecurityCameraCode.v", 74, 283); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("SecurityCameraCode.v", 219, 248); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 40, 246); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 140, 54); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 199, 66); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectCodeEditor("SecurityCameraCode.v", 125, 208); // ce (w, ck)
+// [GUI Memory]: 240 MB (+302kb) [265:13:18]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 2); // k (j, ck)
+selectCodeEditor("user_input.v", 218, 180); // ce (w, ck)
+selectCodeEditor("user_input.v", 209, 159); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("user_input.v", 89, 312); // ce (w, ck)
+selectCodeEditor("user_input.v", 79, 312); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("user_input.v", 7, 369); // ce (w, ck)
+selectCodeEditor("user_input.v", 34, 259); // ce (w, ck)
+selectCodeEditor("user_input.v", 32, 279); // ce (w, ck)
+selectCodeEditor("user_input.v", 231, 228); // ce (w, ck)
+// Elapsed time: 176 seconds
+selectCodeEditor("user_input.v", 47, 289); // ce (w, ck)
+selectCodeEditor("user_input.v", 99, 62); // ce (w, ck)
+// Elapsed time: 77 seconds
+selectCodeEditor("user_input.v", 139, 303); // ce (w, ck)
+// Elapsed time: 82 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 2); // k (j, ck)
+selectCodeEditor("user_input.v", 109, 278); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("user_input.v", 175, 235); // ce (w, ck)
+// Elapsed time: 106 seconds
+selectCodeEditor("user_input.v", 57, 332); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("user_input.v", 144, 255); // ce (w, ck)
+selectCodeEditor("user_input.v", 140, 242); // ce (w, ck)
+// Elapsed time: 50 seconds
+selectCodeEditor("user_input.v", 202, 229); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 92 MB. Current time: 3/4/19 4:25:03 PM CST
+// Elapsed time: 16 seconds
+selectCodeEditor("user_input.v", 121, 361); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+selectCodeEditor("SecurityCameraCode.v", 73, 241); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("SecurityCameraCode.v", 164, 284); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("SecurityCameraCode.v", 190, 232); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+selectCodeEditor("SecurityCameraCode.v", 164, 228); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 328, 235); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 326, 227); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("SecurityCameraCode.v", 129, 447); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 129, 447, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("SecurityCameraCode.v", 114, 262); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 114, 262, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+selectCodeEditor("imaging.v", 174, 381); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("imaging.v", 68, 365); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("imaging.v", 48, 435); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 32 seconds
+selectCodeEditor("imaging.v", 198, 419); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 7); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Mar  4 16:29:23 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 49 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Mon Mar  4 16:30:13 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 139 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Mar  4 16:32:33 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 79 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Hardware_auto_connect_target"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A79380B 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2730.859 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 175 seconds
+selectCodeEditor("SecurityCameraCode.v", 164, 176); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("user_input.v", 52, 293); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("user_input.v", 142, 377); // ce (w, ck)
+selectCodeEditor("user_input.v", 132, 365); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectCodeEditor("user_input.v", 120, 163); // ce (w, ck)
+selectCodeEditor("user_input.v", 14, 325); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Mon Mar  4 16:38:44 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log [Mon Mar  4 16:38:44 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 185 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Mar  4 16:41:51 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 75 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2731.352 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 11 seconds
+dismissDialog("Program Device"); // bx (ck)

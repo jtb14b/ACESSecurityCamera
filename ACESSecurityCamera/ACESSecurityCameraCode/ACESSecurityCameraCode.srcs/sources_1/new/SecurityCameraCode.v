@@ -47,7 +47,10 @@ module SecurityCameraCode
       wire SS;
       wire MOSI;
       
+      wire [7:0] IMMD;
+      
       wire [7:0] dummy;
+      wire [7:0] dummy2;
       
       wire temp_alarm;
       
@@ -65,6 +68,7 @@ module SecurityCameraCode
         .MTR(MTR),
         .MESSAGE(MESSAGE),
         .r_Rx_DV(NEWMESS),
+        .IMMD(IMMD),
         .DEBUG(dummy)
         );
         
@@ -74,23 +78,30 @@ module SecurityCameraCode
         .NEWMESS(NEWMESS),
         
         .clk(dummy_clk5), //!!!!!!!!!!!!!!!!
-        .DEBUG(led),
+        .DEBUG(dummy2),
         
         .sclk(ja[0]),
         .SS(ja[1]),
         .MOSI(ja[2])
         );
         
-        xadc_wiz_0 TEMPMON(
-            .dclk_in(clk),
-            .user_temp_alarm_out(temp_alarm)
-            );
+      imaging IMG(
+        .clk(CLK),
+        .IMMD(IMMD),
+        .trigger(ja[7]), //Should be rerouted
+        .DEBUG(led)
+        );
+        
+      xadc_wiz_0 TEMPMON(
+        .dclk_in(clk),
+        .user_temp_alarm_out(temp_alarm)
+        );
         
         assign ja[3] = led[0];
         assign ja[4] = led[1];
         assign ja[5] = led[2];
         assign ja[6] = led[3];
-        assign ja[7] = NEWMESS;
+      //  assign ja[7] = NEWMESS;
         
         assign CLK = clk & ~temp_alarm;
         
