@@ -77,6 +77,7 @@ void loop (void)
 char buf [100];
 volatile byte pos;
 volatile bool process_it;
+byte c;
 
 void setup (void)
 {
@@ -101,11 +102,12 @@ void setup (void)
 // SPI interrupt routine
 ISR (SPI_STC_vect)
 {
-byte c = SPDR;  // grab byte from SPI Data Register
+c = SPDR;  // grab byte from SPI Data Register
 Serial.println("Received byte: ");
-Serial.println(c);
+//Serial.println(c);
   // add to buffer if room
-  if (pos < sizeof buf)
+  process_it = true;
+/*  if (pos < sizeof buf)
     {
     buf [pos++] = c;
 
@@ -113,7 +115,7 @@ Serial.println(c);
     if (c == '\n')
       process_it = true;
 
-    }  // end of room available
+    }  // end of room available */
 }  // end of interrupt routine SPI_STC_vect
 
 // main loop - wait for flag set in interrupt routine
@@ -121,9 +123,32 @@ void loop (void)
 {
   if (process_it)
     {
-    buf [pos] = 0;
-    Serial.println (buf);
-    pos = 0;
+   // buf [pos] = 0;
+    Serial.println (c);
+
+    switch(c)
+    {
+      case 'A':
+        //Pan Left
+        break;
+      case 'B':
+        //Pan Right
+        break;
+      case 'C':
+        //Tilt Up
+        break;
+      case 'D':
+        //Tilt Down
+        break;
+      case 'E':
+        //Zoom In
+        break;
+      case 'F':
+        //Zoom Out
+        break;
+    }
+    
+  //  pos = 0;
     process_it = false;
     }  // end of flag set
 
