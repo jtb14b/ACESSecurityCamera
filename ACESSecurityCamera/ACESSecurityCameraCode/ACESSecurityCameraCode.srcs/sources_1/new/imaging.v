@@ -23,6 +23,10 @@
 module imaging(
     input clk,
     input [7:0] IMMD,
+    input PIXCLK,
+    input FV,
+    input LV,
+    input [7:0] data,
     output reg trigger,
     output reg [7:0] DEBUG
     );
@@ -45,6 +49,22 @@ module imaging(
     
     reg [3:0] cstate = Init;
     reg [3:0] nstate;
+    
+    //reg rawData0[0:719][0:1279];
+   // reg rawData1[0:719][0:1279];
+   // reg rawData2[0:719][0:1279];
+  //  reg rawData3[0:719][0:1279];
+  //  reg rawData4[0:719][0:1279];
+  //  reg rawData5[0:719][0:1279];
+  //  reg rawData6[0:719][0:1279];
+  //  reg rawData7[0:719][0:1279];
+    
+    reg [7:0] rawData [0:9][0:10];
+    reg [9:0] rowIndex = 0;
+    reg [10:0] colIndex = 0;
+    
+    reg frameDone = 0;
+    
     
   /*  localparameter
         RGB = 1'b0,
@@ -79,8 +99,12 @@ module imaging(
             
             Read : begin
                 //Read from the FPA
+                if(FV) begin
+                    nstate = PixelCorrect;
+                end else begin
+                    nstate = cstate;
+                end
                 
-                nstate = PixelCorrect;
             end
             
             PixelCorrect : begin
@@ -186,6 +210,33 @@ module imaging(
             trigger = 1;
         else
             trigger = 0;
+    end
+    
+    always @ (posedge PIXCLK) begin
+        if (cstate == Read) begin
+            rawData[rowIndex][colIndex] = data;
+            if(colIndex == 1280) begin
+                colIndex = 0;
+            end else begin
+                colIndex = colIndex + 1;
+            end
+        end
+    end
+    
+    always @ (posedge LV) begin
+        if (cstate == Read) begin
+            if(rowIndex == 720) begin
+                rowIndex = 0;
+            end else begin
+                rowIndex = rowIndex + 1;
+            end
+        end
+    end
+    
+    always @ (FV) begin
+        if (cstate == Read) begin
+            frameDone = ~FV;
+        end
     end
     
     always @ (IMMD) begin

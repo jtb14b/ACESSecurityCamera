@@ -7564,3 +7564,905 @@ selectCodeEditor("imaging.v", 144, 380); // ce (w, ck)
 selectCodeEditor("imaging.v", 163, 389); // ce (w, ck)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 95 MB. Current time: 3/21/19 10:00:37 AM CDT
 // HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 10:30:37 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 11:00:38 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 11:30:38 AM CDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2127 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 12:00:39 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 12:30:39 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 1:00:40 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 1:30:40 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 89 MB. Current time: 3/21/19 2:00:40 PM CDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 16574 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Run Synthesis"); // A (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Mar 21 14:17:32 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 47 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Mar 21 14:18:21 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 387 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Mar 21 14:24:49 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 85 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 2:30:41 PM CDT
+// Elapsed time: 306 seconds
+selectCodeEditor("imaging.v", 254, 247, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("imaging.v", 247, 108); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 3:00:41 PM CDT
+// Elapsed time: 2730 seconds
+selectCodeEditor("imaging.v", 172, 355); // ce (w, ck)
+// Elapsed time: 204 seconds
+selectCodeEditor("imaging.v", 192, 383); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("imaging.v", 191, 381); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("imaging.v", 230, 383); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 21 15:21:33 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 72 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-4556] size of variable 'rawData' is too large to handle; the size of the variable is 9830400, the limit is 1000000 [C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.srcs/sources_1/new/imaging.v:49]. ]", 5, false); // ah (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 3:30:42 PM CDT
+// Elapsed time: 779 seconds
+selectCodeEditor("imaging.v", 196, 384); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 21 15:36:17 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Mar 21 15:37:05 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 367 seconds
+selectCodeEditor("imaging.v", 260, 317); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("imaging.v", 233, 331); // ce (w, ck)
+selectCodeEditor("imaging.v", 240, 327); // ce (w, ck)
+// Elapsed time: 133 seconds
+selectCodeEditor("imaging.v", 251, 332); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 21 15:45:59 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("imaging.v", 206, 333); // ce (w, ck)
+selectCodeEditor("imaging.v", 150, 330); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 21 15:46:59 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log [Thu Mar 21 15:46:59 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 343 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 4:00:42 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 95 MB. Current time: 3/21/19 4:30:42 PM CDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A79380B 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 5:00:43 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 5:30:43 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 6:00:44 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 6:30:44 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 7:00:44 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 7:30:45 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 8:00:45 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 8:30:46 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 9:00:46 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 9:30:46 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 10:00:47 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 10:30:47 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/21/19 11:00:48 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/21/19 11:30:48 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 12:00:48 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 12:30:49 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 1:00:49 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 1:30:50 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 2:00:50 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 2:30:50 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 3:00:51 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 3:30:51 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/22/19 4:00:52 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 4:30:52 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 5:00:53 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 5:30:53 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 6:00:53 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 6:30:54 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 7:00:54 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 7:30:55 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 8:00:55 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 8:30:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 9:00:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/22/19 9:30:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 10:00:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 10:30:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 11:00:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 11:30:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 95 MB. Current time: 3/22/19 12:00:58 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 12:30:59 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 1:00:59 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 1:31:00 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 93 MB. Current time: 3/22/19 2:01:00 PM CDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 80425 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectCodeEditor("imaging.v", 14, 327); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel"); // a (aj)
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Save Project"); // aj (ck)
+selectCodeEditor("imaging.v", 239, 247); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar 22 14:13:35 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 66 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Fri Mar 22 14:14:41 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 139 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Mar 22 14:17:01 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 224 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 93 MB. Current time: 3/22/19 2:31:01 PM CDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A79380B 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 2232 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_master.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_shift.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_ctrl.v", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 0); // k (j, ck)
+selectCodeEditor("SecurityCameraCode.v", 355, 261); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 6); // k (j, ck)
+selectCodeEditor("imaging.v", 79, 209); // ce (w, ck)
+selectCodeEditor("imaging.v", 142, 260); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 3:01:01 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/22/19 3:31:01 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 4:01:02 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 4:31:02 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 5:01:03 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/22/19 5:31:03 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 6:01:04 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 6:31:04 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 7:01:05 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 7:31:05 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 8:01:06 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 8:31:06 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 9:01:07 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 9:31:07 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 10:01:08 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 10:31:08 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 11:01:09 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/22/19 11:31:09 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 12:01:10 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 12:31:10 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 1:01:11 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 1:31:11 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 2:01:12 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 2:31:12 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 3:01:12 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 3:31:13 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 4:01:13 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 4:31:14 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 5:01:14 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 5:31:15 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 6:01:15 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/23/19 6:31:16 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 7:01:16 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 7:31:17 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 8:01:17 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 8:31:18 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 9:01:18 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 9:31:19 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 10:01:19 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 10:31:20 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 11:01:21 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 11:31:21 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 12:01:22 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 12:31:22 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 1:01:22 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 1:31:23 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/23/19 2:01:23 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 2:31:24 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/23/19 3:01:24 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/23/19 3:31:25 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/23/19 4:01:26 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/23/19 4:31:26 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 5:01:26 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 5:31:27 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 6:01:27 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 6:31:28 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 7:01:28 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 7:31:29 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 8:01:29 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 8:31:30 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 9:01:30 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 9:31:31 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 10:01:31 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 10:31:32 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 11:01:32 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/23/19 11:31:33 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 12:01:33 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 12:31:34 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 1:01:34 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 1:31:35 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/24/19 2:01:35 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/24/19 2:31:36 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 3:01:36 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 3:31:37 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 4:01:37 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 4:31:38 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 135 MB. Current time: 3/24/19 5:01:38 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 5:31:39 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 6:01:39 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 6:31:40 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/24/19 7:01:40 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 7:31:41 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 8:01:41 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 8:31:42 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/24/19 9:01:42 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 9:31:43 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 10:01:43 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 10:31:44 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 11:01:44 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 11:31:45 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/24/19 12:01:45 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 12:31:46 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 1:01:46 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 1:31:47 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 2:01:47 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 2:31:48 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 3:01:48 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 3:31:49 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 4:01:49 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 4:31:49 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 5:01:50 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 5:31:50 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 6:01:51 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 6:31:51 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 7:01:52 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 7:31:52 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 8:01:53 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 8:31:53 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 9:01:54 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 9:31:54 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 10:01:55 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/24/19 10:31:55 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 11:01:56 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/24/19 11:31:56 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 12:01:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/25/19 12:31:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 1:01:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 1:31:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 2:01:59 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 2:31:59 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 3:02:00 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 3:32:00 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 4:02:01 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 4:32:01 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 5:02:02 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 5:32:02 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 6:02:03 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 6:32:03 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/25/19 7:02:04 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/25/19 7:32:04 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 8:02:04 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 8:32:05 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 9:02:05 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 9:32:06 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 10:02:06 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 96 MB. Current time: 3/25/19 10:32:07 AM CDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2785 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 11:02:07 AM CDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3668 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7018 ms. Increasing delay to 7000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 11:32:09 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 12:02:10 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 12:32:10 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 1:02:11 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 1:32:11 PM CDT
+// Elapsed time: 255286 seconds
+selectCodeEditor("imaging.v", 539, 313); // ce (w, ck)
+// Elapsed time: 141 seconds
+selectCodeEditor("imaging.v", 190, 212); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("imaging.v", 30, 214); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Mar 25 13:56:39 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 23 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("imaging.v", 130, 214); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Mar 25 13:57:40 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 103 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+selectCodeEditor("imaging.v", 50, 213); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Mar 25 13:59:38 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectCodeEditor("imaging.v", 86, 214); // ce (w, ck)
+selectCodeEditor("imaging.v", 225, 209); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'c'); // ce (w, ck)
+selectCodeEditor("imaging.v", 239, 205); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+selectCodeEditor("imaging.v", 110, 230); // ce (w, ck)
+selectCodeEditor("imaging.v", 232, 315); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Mar 25 14:00:48 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 93 MB. Current time: 3/25/19 2:02:12 PM CDT
+// Elapsed time: 114 seconds
+selectCodeEditor("imaging.v", 236, 157); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 407 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+selectCodeEditor("imaging.v", 255, 334); // ce (w, ck)
+// Elapsed time: 52 seconds
+selectCodeEditor("imaging.v", 211, 204); // ce (w, ck)
+selectCodeEditor("imaging.v", 253, 334); // ce (w, ck)
+// Elapsed time: 122 seconds
+selectCodeEditor("imaging.v", 175, 364); // ce (w, ck)
+selectCodeEditor("imaging.v", 26, 212); // ce (w, ck)
+selectCodeEditor("imaging.v", 22, 227); // ce (w, ck)
+selectCodeEditor("imaging.v", 18, 253); // ce (w, ck)
+selectCodeEditor("imaging.v", 15, 269); // ce (w, ck)
+selectCodeEditor("imaging.v", 12, 286); // ce (w, ck)
+selectCodeEditor("imaging.v", 12, 303); // ce (w, ck)
+selectCodeEditor("imaging.v", 11, 324); // ce (w, ck)
+selectCodeEditor("imaging.v", 11, 314); // ce (w, ck)
+selectCodeEditor("imaging.v", 260, 376); // ce (w, ck)
+selectCodeEditor("imaging.v", 263, 359); // ce (w, ck)
+// Elapsed time: 89 seconds
+selectCodeEditor("imaging.v", 190, 302); // ce (w, ck)
+selectCodeEditor("imaging.v", 170, 278); // ce (w, ck)
+selectCodeEditor("imaging.v", 156, 264); // ce (w, ck)
+// Elapsed time: 369 seconds
+selectCodeEditor("imaging.v", 162, 307); // ce (w, ck)
+// Elapsed time: 174 seconds
+selectCodeEditor("imaging.v", 117, 370); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("imaging.v", 200, 394); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("imaging.v", 110, 245); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("imaging.v", 184, 363); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 2:32:13 PM CDT
+// Elapsed time: 704 seconds
+selectCodeEditor("imaging.v", 134, 382); // ce (w, ck)
+// Elapsed time: 65 seconds
+selectCodeEditor("imaging.v", 156, 330); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("imaging.v", 240, 349); // ce (w, ck)
+selectCodeEditor("imaging.v", 217, 362); // ce (w, ck)
+// Elapsed time: 73 seconds
+selectCodeEditor("imaging.v", 343, 364); // ce (w, ck)
+selectCodeEditor("imaging.v", 284, 366); // ce (w, ck)
+// Elapsed time: 102 seconds
+selectCodeEditor("imaging.v", 242, 118, false, false, true, false, false); // ce (w, ck) - Alt Key
+selectCodeEditor("imaging.v", 155, 379); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("imaging.v", 100, 238); // ce (w, ck)
+// Elapsed time: 93 seconds
+selectCodeEditor("imaging.v", 327, 330); // ce (w, ck)
+// Elapsed time: 59 seconds
+selectCodeEditor("imaging.v", 196, 381); // ce (w, ck)
+// Elapsed time: 70 seconds
+selectCodeEditor("imaging.v", 175, 302); // ce (w, ck)
+selectCodeEditor("imaging.v", 223, 269); // ce (w, ck)
+selectCodeEditor("imaging.v", 223, 276); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("imaging.v", 242, 261); // ce (w, ck)
+// Elapsed time: 46 seconds
+selectCodeEditor("imaging.v", 130, 297); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("imaging.v", 112, 295); // ce (w, ck)
+selectCodeEditor("imaging.v", 165, 275); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Mar 25 14:46:28 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 51 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Mon Mar 25 14:47:20 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 380 seconds
+selectCodeEditor("imaging.v", 242, 327); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("imaging.v", 145, 296); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("imaging.v", 169, 326); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Mar 25 14:54:24 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Mon Mar 25 14:55:13 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 3:02:16 PM CDT
+// Elapsed time: 558 seconds
+selectCodeEditor("imaging.v", 320, 75); // ce (w, ck)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5124 ms. Increasing delay to 8000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 3:32:17 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 4:02:17 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 4:32:18 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 5:02:18 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 5:32:19 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 6:02:19 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 6:32:20 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 7:02:20 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 7:32:20 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 8:02:21 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 8:32:21 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 9:02:22 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 9:32:23 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 10:02:23 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 10:32:23 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/25/19 11:02:24 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/25/19 11:32:24 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 12:02:25 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 12:32:29 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 1:02:29 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 1:32:30 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 2:02:30 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 2:32:31 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 3:02:31 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 3:32:32 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 4:02:32 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 4:32:33 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 97 MB. Current time: 3/26/19 5:02:33 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 5:32:34 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 6:02:34 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 6:32:35 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 7:02:35 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 7:32:36 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 8:02:36 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 8:32:37 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 98 MB. Current time: 3/26/19 9:02:37 AM CDT
