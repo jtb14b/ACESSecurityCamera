@@ -1841,3 +1841,16 @@ Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityC
 launch_runs impl_1 -jobs 2
 [Mon Mar 25 14:55:13 2019] Launched impl_1...
 Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Thu Mar 28 09:46:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Thu Mar 28 09:47:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 09:49:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log

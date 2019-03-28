@@ -243,4 +243,8 @@ module imaging(
         DEBUG <= IMMD;
     end
     
+    always @ (rawData[10][10]) begin
+        DEBUG <= rawData[10][10];
+    end
+    
 endmodule
