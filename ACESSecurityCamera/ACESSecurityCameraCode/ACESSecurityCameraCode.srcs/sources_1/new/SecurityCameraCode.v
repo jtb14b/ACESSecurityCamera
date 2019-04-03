@@ -36,7 +36,23 @@ module SecurityCameraCode
       input        clk,
       input        uart_tx_in,
       output wire [7:0] led,
-      output wire [7:0] ja
+      output wire [7:0] ja,
+      output wire H7,
+      input         H8,
+      input         D21,
+      input         G12,
+      input C14,
+      input C10,
+      input G6,
+      input C11,
+      input C15,
+      input G18,
+      input G7,
+      input H13,
+      input H16,
+      input G19,
+      input D8,
+      input H14
       );
       
       wire MTR;
@@ -61,6 +77,8 @@ module SecurityCameraCode
       reg dummy_clk5 = 0;
       
       wire CLK;
+      
+      reg [11:0] FPAData = 12'h000;
       
       user_input UI(
         .clk(dummy_clk5), //!!!!!!!!!!!!
@@ -88,7 +106,11 @@ module SecurityCameraCode
       imaging IMG(
         .clk(CLK),
         .IMMD(IMMD),
-        .trigger(ja[7]), //Should be rerouted
+        .PIXCLK(H8),
+        .FV(D21),
+        .LV(G12),
+        .data(FPAData),
+        .trigger(H7),
         .DEBUG(led)
         );
         
@@ -128,6 +150,56 @@ module SecurityCameraCode
             dummy_clk5 = ~dummy_clk5;
         end
         
+        always @(C14) begin
+            FPAData[0] <= C14;
+        end
+            
+        always @(C10) begin
+            FPAData[1] <= C10;
+        end
+                        
+        always @(G6) begin
+            FPAData[2] <= G6;
+        end
+        
+        always @(C11) begin
+            FPAData[3] <= C11;
+        end
+        
+        always @(C15) begin
+            FPAData[4] <= C15;
+        end
+        
+        always @(G18) begin
+            FPAData[5] <= G18;
+        end
+        
+        always @(G7) begin
+            FPAData[6] <= G7;
+        end
+        
+        always @(H13) begin
+            FPAData[7] <= H13;
+        end
+        
+        always @(H16) begin
+            FPAData[8] <= H16;
+        end
+        
+        always @(G19) begin
+            FPAData[9] <= G19;
+        end
+        
+        always @(D8) begin
+            FPAData[10] <= D8;
+        end
+        
+        always @(H14) begin
+            FPAData[11] <= H14;
+        end
+        
+        
+       
         
 endmodule
 

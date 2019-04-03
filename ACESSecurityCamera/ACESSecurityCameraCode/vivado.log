@@ -1867,3 +1867,4 @@ Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityC
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 [Thu Mar 28 09:57:30 2019] Launched impl_1...
 Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log
+close_hw

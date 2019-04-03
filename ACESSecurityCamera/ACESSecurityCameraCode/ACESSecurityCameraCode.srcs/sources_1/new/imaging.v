@@ -26,7 +26,7 @@ module imaging(
     input PIXCLK,
     input FV,
     input LV,
-    input [7:0] data,
+    input [11:0] data,
     output reg trigger,
     output reg [7:0] DEBUG
     );
@@ -59,7 +59,7 @@ module imaging(
   //  reg rawData6[0:719][0:1279];
   //  reg rawData7[0:719][0:1279];
     
-    reg [7:0] rawData [0:9][0:10];
+    reg [11:0] rawData [0:9][0:10];
     reg [9:0] rowIndex = 0;
     reg [10:0] colIndex = 0;
     
