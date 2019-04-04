@@ -31,6 +31,27 @@ module imaging(
     output reg [7:0] DEBUG
     );
     
+    reg [7:0] toFPA = 8'h00;
+    wire [7:0] fromFPA;
+    reg [15:0] register = 16'h0000;
+    reg dir = 0;
+    reg send = 0;
+    wire done;
+    
+    localparam
+        WRITE = 1'b0,
+        READ = 1'b1;
+    
+    fpa_communication FPACOMM(
+        .clk(clk),
+        .writeData(toFPA),
+        .readData(fromFPA),
+        .register(register),
+        .dir(dir),
+        .send(send),
+        .done(done)
+        );
+    
     localparam [3:0]
         Init            = 4'b0000,
         Trigger         = 4'b0001,
@@ -87,6 +108,17 @@ module imaging(
         case(cstate)
             Init : begin
                 //Set FPA Settings
+                dir = WRITE;
+                register = 16'h3070;
+                toFPA = 8'h03;
+                
+                send = 1;
+                send = 1;
+                send = 1;
+                
+                send = 0;
+                send = 0;
+                send = 0;
                 
                 nstate = Trigger;
             end

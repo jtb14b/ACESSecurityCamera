@@ -21,9 +21,28 @@
 
 
 module fpa_communication(
-    input clk
+    input clk,
+    input [7:0] writeData,
+    output reg [7:0] readData,
+    input [15:0] register,
+    input dir, //0 for write, 1 for read
+    input send,
+    output reg done,
+    
+    output reg sclk,
+    inout sdata
     );
     
+    reg dout = 0;
+    reg [7:0] din;
+    reg outEn = 0;
+    reg mode = 0; //0 for write, 1 for read
+    
+    assign sdata = outEn ? dout : 1'bz;
+    
+    localparam
+        WRITE = 1'b0,
+        READ = 1'b1;
     
     localparam [3:0]
         Idle        = 4'b0000,
@@ -41,6 +60,14 @@ module fpa_communication(
     reg [3:0] afterWaitState = Idle;
     reg [3:0] nstate;
     
+    reg ready = 0;
+    
+    reg [7:0] addressdir = 8'h00;
+    
+    reg [2:0] sendingIndex = 0;
+    
+    reg i;
+    
     always @ (posedge clk) begin
         cstate = nstate;
     end
@@ -48,19 +75,217 @@ module fpa_communication(
     always @ (cstate) begin
         case(cstate)
             Idle : begin
-                //
+                mode = WRITE;
+                done = 0;
+                //Regulated in always block below
+                if(ready) 
+                    nstate = Start;
+                else
+                    nstate = cstate;
             end
             
             Start : begin
-                //
+                outEn = 1;
+                
+                dout = 1;
+                dout = 1;
+                dout = 1;
+                
+                sclk = 1;
+                
+                dout = 0;
+                dout = 0;
+                dout = 0;
+                
+                sclk = 0;
+                
+                nstate = AddDir;
             end
             
             AddDir : begin
-                //
+                outEn = 1;
+                sendingIndex = 0;
+                
+                sclk = 0;
+                sclk = 0;
+                
+                //Send 0x20 for write and 0x21 for read
+                //0b0010|0000 or 0b0010|0001
+                
+                addressdir = (8'h20) | mode;
+                for(i=7; i>=0; i = i - 1) begin
+                    dout = addressdir[i];
+                    
+                    sclk = 1;
+                    sclk = 1;
+                    sclk = 1;
+                    
+                    sclk = 0;
+                    sclk = 0;
+                    sclk = 0;
+                end
+                
+                if(mode == WRITE) begin
+                    afterWaitState = ADDR0;
+                    nstate = Wait;
+                end else
+                    nstate = Reading;
+            end
+            
+            Wait : begin
+                outEn = 0;
+                
+                sclk = 0;
+                
+                if(sdata == 0)
+                    nstate = afterWaitState;
+                else
+                    nstate = cstate;
+            end
+            
+            ADDR0 : begin
+                outEn = 1;
+                
+                sclk = 0;
+                
+                for(i=15; i>=8; i = i - 1) begin
+                    dout = register[i];
+                                
+                    sclk = 1;
+                    sclk = 1;
+                    sclk = 1;
+                                
+                    sclk = 0;
+                    sclk = 0;
+                    sclk = 0;
+                end
+                
+                afterWaitState = ADDR1;
+                nstate = Wait;
+            end
+            
+            ADDR1 : begin
+                outEn = 1;
+                
+                sclk = 0;
+                
+                for(i=7; i>=0; i = i - 1) begin
+                    dout = register[i];
+                                
+                    sclk = 1;
+                    sclk = 1;
+                    sclk = 1;
+                                
+                    sclk = 0;
+                    sclk = 0;
+                    sclk = 0;
+                end
+                
+                if(dir == WRITE) begin
+                    afterWaitState = Message;
+                end else begin
+                    afterWaitState = Start;
+                    mode = READ;
+                end
+                nstate = Wait;
+            end
+            
+            Message :  begin
+                outEn = 1;
+                
+                sclk = 0;
+                
+                for(i=7; i>=0; i = i - 1) begin
+                    dout = register[i];
+                            
+                    sclk = 1;
+                    sclk = 1;
+                    sclk = 1;
+                            
+                    sclk = 0;
+                    sclk = 0;
+                    sclk = 0;
+                end
+                
+                afterWaitState = Stop;
+                nstate = Wait;
+            end
+            
+            Stop : begin
+                outEn = 1;
+            
+                dout = 0;
+                dout = 0;
+                dout = 0;
+            
+                sclk = 1;
+            
+                dout = 1;
+                dout = 1;
+                dout = 1;
+                
+                sclk = 0;
+                
+                done = 1;
+                
+                nstate = Idle;
+            end
+            
+            Reading : begin
+                outEn = 0;
+                
+                sclk = 0;
+                
+                for(i=7; i>=0; i = i - 1) begin
+                    sclk = 1;
+                    sclk = 1;
+                    sclk = 1;
+                    
+                    din[i] = sdata;
+                    
+                    sclk = 0;
+                    sclk = 0;
+                    sclk = 0;
+                end
+                
+                readData = din;
+                
+                nstate = NOA;
+            end
+            
+            NOA : begin
+                outEn = 0;
+                
+                sclk = 1;
+                sclk = 1;
+                sclk = 1;
+                
+                sclk = 0;
+                sclk = 0;
+                sclk = 0;
+                
+                nstate = Stop;
             end
             
             default : begin
                 nstate = Idle;
             end
         endcase
+    end
+    
+    always @ (posedge send) begin
+        ready = 1;
+        ready = 1;
+        ready = 1;
+        ready = 1;
+        ready = 1;
+        ready = 1;
+        ready = 0;
+        ready = 0;
+        ready = 0;
+        ready = 0;
+        ready = 0;
+        ready = 0;
+    end
+    
 endmodule
