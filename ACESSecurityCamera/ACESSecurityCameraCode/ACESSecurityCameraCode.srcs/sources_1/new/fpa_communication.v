@@ -66,7 +66,7 @@ module fpa_communication(
     
     reg [2:0] sendingIndex = 0;
     
-    reg i;
+    reg [4:0] i;
     
     always @ (posedge clk) begin
         cstate = nstate;
@@ -113,8 +113,8 @@ module fpa_communication(
                 //0b0010|0000 or 0b0010|0001
                 
                 addressdir = (8'h20) | mode;
-                for(i=7; i>=0; i = i - 1) begin
-                    dout = addressdir[i];
+                for(i=8; i>=1; i = i - 1) begin //Shifted to account for unsigned bits
+                    dout = addressdir[i-1];
                     
                     sclk = 1;
                     sclk = 1;
@@ -169,8 +169,8 @@ module fpa_communication(
                 
                 sclk = 0;
                 
-                for(i=7; i>=0; i = i - 1) begin
-                    dout = register[i];
+                for(i=8; i>=1; i = i - 1) begin //Shifted
+                    dout = register[i-1];
                                 
                     sclk = 1;
                     sclk = 1;
@@ -195,8 +195,8 @@ module fpa_communication(
                 
                 sclk = 0;
                 
-                for(i=7; i>=0; i = i - 1) begin
-                    dout = register[i];
+                for(i=8; i>=1; i = i - 1) begin //Shifted
+                    dout = register[i-1];
                             
                     sclk = 1;
                     sclk = 1;
@@ -236,12 +236,12 @@ module fpa_communication(
                 
                 sclk = 0;
                 
-                for(i=7; i>=0; i = i - 1) begin
+                for(i=8; i>=1; i = i - 1) begin //Shifted
                     sclk = 1;
                     sclk = 1;
                     sclk = 1;
                     
-                    din[i] = sdata;
+                    din[i-1] = sdata;
                     
                     sclk = 0;
                     sclk = 0;

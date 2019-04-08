@@ -37,22 +37,22 @@ module SecurityCameraCode
       input        uart_tx_in,
       output wire [7:0] led,
       output wire [7:0] ja,
-      output wire H7,
-      input         H8,
-      input         D21,
-      input         G12,
-      input C14,
-      input C10,
-      input G6,
-      input C11,
-      input C15,
-      input G18,
-      input G7,
-      input H13,
-      input H16,
-      input G19,
-      input D8,
-      input H14
+      output wire M18, //H7,
+      input       L18, //  H8,
+      input       B18,//  D21,
+      input       M15,//  G12,
+      input K21,//C14,
+      input N22,//C10,
+      input K18,//G6,
+      input M22,//C11,
+      input K22,//C15,
+      input G17,//G18,
+      input K19,//G7,
+      input M13,//H13,
+      input L14,//H16,
+      input G18,//G19,
+      input J20,//D8,
+      input L13//H14
       );
       
       wire MTR;
@@ -106,11 +106,11 @@ module SecurityCameraCode
       imaging IMG(
         .clk(CLK),
         .IMMD(IMMD),
-        .PIXCLK(H8),
-        .FV(D21),
-        .LV(G12),
+        .PIXCLK(L18),
+        .FV(B18),
+        .LV(M15),
         .data(FPAData),
-        .trigger(H7),
+        .trigger(M18),
         .DEBUG(led)
         );
         
@@ -150,52 +150,52 @@ module SecurityCameraCode
             dummy_clk5 = ~dummy_clk5;
         end
         
-        always @(C14) begin
-            FPAData[0] <= C14;
+        always @(K21) begin
+            FPAData[0] <= K21;
         end
             
-        always @(C10) begin
-            FPAData[1] <= C10;
+        always @(N22) begin
+            FPAData[1] <= N22;
         end
                         
-        always @(G6) begin
-            FPAData[2] <= G6;
+        always @(K18) begin
+            FPAData[2] <= K18;
         end
         
-        always @(C11) begin
-            FPAData[3] <= C11;
+        always @(M22) begin
+            FPAData[3] <= M22;
         end
         
-        always @(C15) begin
-            FPAData[4] <= C15;
+        always @(K22) begin
+            FPAData[4] <= K22;
+        end
+        
+        always @(G17) begin
+            FPAData[5] <= G17;
+        end
+        
+        always @(K19) begin
+            FPAData[6] <= K19;
+        end
+        
+        always @(M13) begin
+            FPAData[7] <= M13;
+        end
+        
+        always @(L14) begin
+            FPAData[8] <= L14;
         end
         
         always @(G18) begin
-            FPAData[5] <= G18;
+            FPAData[9] <= G18;
         end
         
-        always @(G7) begin
-            FPAData[6] <= G7;
+        always @(J20) begin
+            FPAData[10] <= J20;
         end
         
-        always @(H13) begin
-            FPAData[7] <= H13;
-        end
-        
-        always @(H16) begin
-            FPAData[8] <= H16;
-        end
-        
-        always @(G19) begin
-            FPAData[9] <= G19;
-        end
-        
-        always @(D8) begin
-            FPAData[10] <= D8;
-        end
-        
-        always @(H14) begin
-            FPAData[11] <= H14;
+        always @(L13) begin
+            FPAData[11] <= L13;
         end
         
         

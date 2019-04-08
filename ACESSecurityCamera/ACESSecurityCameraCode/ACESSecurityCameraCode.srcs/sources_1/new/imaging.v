@@ -38,6 +38,8 @@ module imaging(
     reg send = 0;
     wire done;
     
+   //  reg trigger = 0;
+    
     localparam
         WRITE = 1'b0,
         READ = 1'b1;
