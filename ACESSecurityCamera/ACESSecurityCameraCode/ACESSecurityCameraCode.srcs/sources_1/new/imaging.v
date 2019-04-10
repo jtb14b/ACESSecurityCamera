@@ -39,6 +39,7 @@ module imaging(
     wire done;
     
    //  reg trigger = 0;
+   
     
     localparam
         WRITE = 1'b0,
