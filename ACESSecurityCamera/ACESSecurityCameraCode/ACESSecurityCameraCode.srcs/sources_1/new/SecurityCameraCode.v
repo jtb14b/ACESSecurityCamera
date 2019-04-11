@@ -36,8 +36,8 @@ module SecurityCameraCode
       input        clk,
       input        uart_tx_in,
       output wire [7:0] led,
-      output wire [7:0] ja,
-      output wire fmc_la_p02,//M18, //H7,
+      output wire [7:0] ja
+ /*     output wire fmc_la_p02,//M18, //H7,
       input       L18, //  H8,
       input       fmc_la17_cc_n,//B18,//  D21,
       input       M15,//  G12,
@@ -52,7 +52,7 @@ module SecurityCameraCode
       input L14,//H16,
       input G18,//G19,
       input J20,//D8,
-      input L13//H14
+      input L13//H14 */
       );
       
       wire MTR;
@@ -78,7 +78,7 @@ module SecurityCameraCode
       
       wire CLK;
       
-      reg [11:0] FPAData = 12'h000;
+  //    reg [11:0] FPAData = 12'h000;
       
       user_input UI(
         .clk(dummy_clk5), //!!!!!!!!!!!!
@@ -87,7 +87,7 @@ module SecurityCameraCode
         .MESSAGE(MESSAGE),
         .r_Rx_DV(NEWMESS),
         .IMMD(IMMD),
-        .DEBUG(dummy)
+        .DEBUG(led)
         );
         
       motor_control MC(
@@ -103,7 +103,7 @@ module SecurityCameraCode
         .MOSI(ja[2])
         );
         
-      imaging IMG(
+ /*     imaging IMG(
         .clk(CLK),
         .IMMD(IMMD),
         .PIXCLK(L18),
@@ -112,7 +112,7 @@ module SecurityCameraCode
         .data(FPAData),
         .trigger(M18),
         .DEBUG(led)
-        );
+        );*/
         
       xadc_wiz_0 TEMPMON(
         .dclk_in(clk),
@@ -150,7 +150,7 @@ module SecurityCameraCode
             dummy_clk5 = ~dummy_clk5;
         end
         
-        always @(K21) begin
+ /*       always @(K21) begin
             FPAData[0] <= K21;
         end
             
@@ -198,7 +198,7 @@ module SecurityCameraCode
             FPAData[11] <= L13;
         end
         
-        
+        */
        
         
 endmodule

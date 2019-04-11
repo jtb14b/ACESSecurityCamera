@@ -1,28 +1,49 @@
 
+#define DEBUG 1
+
 #include <SPI.h>
 #include <Wire.h>
+
+#ifdef DEBUG
 #include <Adafruit_MotorShield.h>
+#endif
+
+#define SSIZE 100
+#define AZMIN -547
+#define AZMAX 547
+#define ELMIN -250
+#define ELMAX 250
 
 char buf [100];
 volatile byte pos;
 volatile bool process_it;
+volatile bool automatic_mode;
 byte c;
 
+int azPos;
+int elPos;
+volatile int auto_index;
+
+#ifdef DEBUG
 Adafruit_MotorShield AFMS = Adafruit_MotorShield();
 Adafruit_MotorShield AFMS2 = Adafruit_MotorShield();
 
 Adafruit_StepperMotor *AZMotor = AFMS.getStepper(200, 1);
 Adafruit_StepperMotor *ELMotor = AFMS.getStepper(200, 2);
+#endif
+
 
 void setup (void)
 {
   Serial.begin (115200);// debugging
 
+  #ifdef DEBUG
   AFMS.begin();
   AFMS2.begin();
 
-  AZMotor->setSpeed(15);
-  ELMotor->setSpeed(15);
+  AZMotor->setSpeed(40);
+  ELMotor->setSpeed(40);
+  #endif
 
   // turn on SPI in slave mode
   SPCR |= bit (SPE);
@@ -33,6 +54,11 @@ void setup (void)
   // get ready for an interrupt
   pos = 0;   // buffer empty
   process_it = false;
+  automatic_mode = false;
+
+  azPos = 0;
+  elPos = 0;
+  auto_index = 0;
 
   // now turn on interrupts
   SPI.attachInterrupt();
@@ -57,50 +83,203 @@ Serial.println("Received byte: ");
       process_it = true;
 
     }  // end of room available */
+
+  if(c == 'H')
+  {
+    automatic_mode = !automatic_mode;
+
+    if(automatic_mode)
+    {
+      auto_index = 0;
+      Serial.println("Switching to Automatic Mode");
+    }
+    else
+    {
+      Serial.println("Switching to Manual Mode");
+    }
+  }
 }  // end of interrupt routine SPI_STC_vect
 
 // main loop - wait for flag set in interrupt routine
 void loop (void)
 {
-  if (process_it)
-    {
-   // buf [pos] = 0;
-    Serial.println (c);
+  
+  if(automatic_mode)
+  {
+      //Auto stuff
+      switch(auto_index)
+      {
+        case 0:
+          delay(1000);
+          break;
+        case 1:
+          posReset();
+          break;
+        case 2:
+          panLeft(AZMAX-10);
+          break;
+        case 3:
+          delay(1000);
+          break;
+        case 4:
+          posReset();
+          break;
+        case 5:
+          panRight(-AZMIN-10);
+          break;
+      }
 
-    switch(c)
-    {
-      case 'A':
-        //Pan Left
-        AZMotor->step(100, FORWARD, SINGLE);
-        Serial.println("Pan Left");
-        break;
-      case 'B':
-        //Pan Right
-        AZMotor->step(100, BACKWARD, SINGLE);
-        Serial.println("Pan Right");
-        break;
-      case 'C':
-        //Tilt Up
-        ELMotor->step(100, FORWARD, SINGLE);
-        Serial.println("Tilt Up");
-        break;
-      case 'D':
-        //Tilt Down
-        ELMotor->step(100, BACKWARD, SINGLE);
-        Serial.println("Tilt Down");
-        break;
-      case 'E':
-        //Zoom In
-        Serial.println("Zoom In");
-        break;
-      case 'F':
-        //Zoom Out
-        Serial.println("Zoom Out");
-        break;
-    }
+      auto_index++;
+      if(auto_index >= 6)
+        auto_index = 0;
+  }
+  else
+  {
+      if (process_it)
+        {
+       // buf [pos] = 0;
+        Serial.println (c);
     
-  //  pos = 0;
-    process_it = false;
-    }  // end of flag set
-
+        switch(c)
+        {
+          case 'A':
+            //Pan Left
+            panLeft(SSIZE);
+            break;
+          case 'B':
+            //Pan Right
+            panRight(SSIZE);
+            break;
+          case 'C':
+            //Tilt Up
+            tiltUp(SSIZE);
+            break;
+          case 'D':
+            //Tilt Down
+            tiltDown(SSIZE);
+            break;
+          case 'E':
+            //Zoom In
+            break;
+          case 'F':
+            //Zoom Out
+            break;
+          case 'G':
+            //Reset
+            posReset();
+            break;
+          
+        }
+    
+        //  pos = 0;
+        process_it = false;
+      }  // end of flag set
+  }
 }  // end of loop 
+
+void panLeft(int STEPSIZE)
+{
+    if(azPos + STEPSIZE < AZMAX)
+    {
+        Serial.println("Pan Left");
+        #ifdef DEBUG
+        AZMotor->step(STEPSIZE, FORWARD, SINGLE);
+        #endif
+        
+    
+        azPos += STEPSIZE;
+    }
+    else
+    {
+        Serial.println("TOO FAR LEFT");
+    }
+
+    Serial.println("Azimuth Position:");
+    Serial.println(azPos);
+}
+
+void panRight(int STEPSIZE)
+{
+    if(azPos - STEPSIZE > AZMIN)
+    {
+        Serial.println("Pan Right");
+        #ifdef DEBUG
+        AZMotor->step(STEPSIZE, BACKWARD, SINGLE);
+        #endif
+    
+        azPos -= STEPSIZE;
+    }
+    else
+    {
+        Serial.println("TOO FAR RIGHT");
+    }
+
+    Serial.println("Azimuth Position:");
+    Serial.println(azPos);
+}
+
+void tiltUp(int STEPSIZE)
+{
+    if(elPos + STEPSIZE < ELMAX)
+    {
+        Serial.println("Tilt Up");
+        #ifdef DEBUG
+        ELMotor->step(STEPSIZE, FORWARD, SINGLE);
+        #endif
+    
+        elPos += STEPSIZE;
+    }
+    else
+    {
+        Serial.println("TOO FAR UP");
+    }
+
+    Serial.println("Elevation Position:");
+    Serial.println(elPos);
+}
+
+void tiltDown(int STEPSIZE)
+{
+    if(elPos - STEPSIZE > ELMIN)
+    {
+        Serial.println("Tilt Down");
+        #ifdef DEBUG
+        ELMotor->step(STEPSIZE, BACKWARD, SINGLE);
+        #endif
+    
+        elPos -= STEPSIZE;
+    }
+    else
+    {
+        Serial.println("TOO FAR DOWN");
+    }
+
+    Serial.println("Elevation Position:");
+    Serial.println(elPos);
+}
+
+void posReset()
+{
+    Serial.println("Reset Position");
+    #ifdef DEBUG
+    if(azPos >= 0)
+        AZMotor->step(azPos, BACKWARD, SINGLE);
+    else
+        AZMotor->step(-azPos, FORWARD, SINGLE);
+    #endif
+    azPos = 0;
+
+    Serial.println("Azimuth Position:");
+    Serial.println(azPos);
+
+    #ifdef DEBUG
+    if(elPos >= 0)
+        ELMotor->step(elPos, BACKWARD, SINGLE);
+    else
+        ELMotor->step(-elPos, FORWARD, SINGLE);
+    #endif
+    elPos = 0;
+
+    Serial.println("Elevation Position:");
+    Serial.println(elPos);
+}

@@ -1,0 +1,270 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 3964
+License: Customer
+
+Current time: 	Thu Apr 11 15:33:40 CDT 2019
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 65 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	jtb14b
+User home directory: C:/Users/jtb14b
+User working directory: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/jtb14b/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/jtb14b/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/jtb14b/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/vivado.log
+Vivado journal file location: 	C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/vivado.jou
+Engine tmp dir: 	C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/.Xil/Vivado-3964-BEN-210-04-9077
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	189 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 514 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\jtb14b\Documents\GitHub\ACESSecurityCamera\ACESSecurityCamera\ACESSecurityCameraCode\ACESSecurityCameraCode.xpr. Version: Vivado v2018.2 
+// [GUI Memory]: 76 MB (+76939kb) [00:00:08]
+// [Engine Memory]: 505 MB (+378460kb) [00:00:08]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 39 MB. Current time: 4/11/19 3:33:44 PM CDT
+// [Engine Memory]: 554 MB (+24431kb) [00:00:15]
+// Tcl Message: open_project C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// [Engine Memory]: 596 MB (+15063kb) [00:00:20]
+// Project name: ACESSecurityCameraCode; location: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode; part: xc7a200tsbg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 779.543 ; gain = 66.074 
+dismissDialog("Open Project"); // bx (ck)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2180 ms. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), UI : user_input (user_input.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), UI : user_input (user_input.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), MC : motor_control (motor_control.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), MC : motor_control (motor_control.v)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), IMG : imaging (imaging.v)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), IMG : imaging (imaging.v)]", 5, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), MC : motor_control (motor_control.v), SPIM : spi_master (spi_master.v)]", 4); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), MC : motor_control (motor_control.v), SPIM : spi_master (spi_master.v)]", 4); // B (D, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 616 MB. GUI used memory: 48 MB. Current time: 4/11/19 3:34:28 PM CDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+selectCodeEditor("SecurityCameraCode.v", 25, 119); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 9, 124); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 160, 384); // ce (w, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("SecurityCameraCode.v", 189, 113); // ce (w, ck)
+// [GUI Memory]: 81 MB (+1032kb) [00:11:22]
+// Elapsed time: 589 seconds
+selectCodeEditor("SecurityCameraCode.v", 152, 339); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("SecurityCameraCode.v", 13, 112); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 4, 176); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 89, 328); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 6, 206); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 70, 405); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("SecurityCameraCode.v", 120, 198); // ce (w, ck)
+selectCodeEditor("SecurityCameraCode.v", 120, 198, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor_control.v", 3); // k (j, ck)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SecurityCameraCode.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 646 MB (+21376kb) [00:13:23]
+// [GUI Memory]: 92 MB (+7636kb) [00:13:23]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 50 MB. Current time: 4/11/19 3:46:58 PM CDT
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 11 15:46:58 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 240ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// [GUI Memory]: 97 MB (+558kb) [00:15:02]
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Apr 11 15:51:20 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// Elapsed time: 261 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 426 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Apr 11 15:58:27 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 325 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// Elapsed time: 455 seconds
+selectButton(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Hardware_auto_connect_target"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 853.305 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A79380B 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,265 MB (+615133kb) [00:38:07]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_CREATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_PART_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {s25fl256sxxxxxx0-spi-x1_x2_x4}] 0] 
+dismissDialog("Auto Connect"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,272 MB. GUI used memory: 52 MB. Current time: 4/11/19 4:11:38 PM CDT
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (2) ; Programmed", 2, "xc7a200t_0 (2)", 0, true); // t (O, ck) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a200t_0 (2) ; Programmed", 2, "xc7a200t_0 (2)", 0, true, false, false, false, true, false); // t (O, ck) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// HOptionPane Error: 'The file 'C:/Xilinx/Vivado/2018.2/data/xicom/cfgmem/spi_xc7a200t_pullnone.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton (A, H)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bB)
+// Elapsed time: 28 seconds
+setFileChooser("C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.273 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 40 seconds
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,292 MB. GUI used memory: 55 MB. Current time: 4/11/19 4:16:08 PM CDT
