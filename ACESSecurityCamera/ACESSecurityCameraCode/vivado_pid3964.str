@@ -268,3 +268,194 @@ dismissDialog("Program Device"); // bB (ck)
 // 'I' command handler elapsed time: 40 seconds
 dismissDialog("Program Device"); // bx (ck)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,292 MB. GUI used memory: 55 MB. Current time: 4/11/19 4:16:08 PM CDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A79380B 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 55 MB. Current time: 4/11/19 4:46:09 PM CDT
+// [GUI Memory]: 103 MB (+666kb) [01:24:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 5:16:09 PM CDT
+// [GUI Memory]: 109 MB (+1157kb) [02:03:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 52 MB. Current time: 4/11/19 5:46:09 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 6:16:10 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 6:46:10 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 7:16:10 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 7:46:11 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 8:16:11 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 8:46:12 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 9:16:12 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 9:46:12 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 10:16:13 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 10:46:13 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 11:16:14 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/11/19 11:46:14 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 12:16:14 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 12:46:15 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 1:16:15 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 1:46:16 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 2:16:16 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 2:46:16 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 3:16:17 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 3:46:17 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 4:16:18 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 4:46:18 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 5:16:18 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 5:46:19 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 6:16:19 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 6:46:20 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 7:16:20 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 7:46:21 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 8:16:21 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 8:46:22 AM CDT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 632 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 633 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 633 ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 9:16:22 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 52 MB. Current time: 4/12/19 9:46:23 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 10:16:23 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 10:46:23 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 11:16:24 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 11:46:24 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 12:16:25 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 12:46:25 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 53 MB. Current time: 4/12/19 1:16:25 PM CDT
+// [GUI Memory]: 115 MB (+1180kb) [22:03:20]
+// [GUI Memory]: 122 MB (+924kb) [22:03:40]
+// [GUI Memory]: 129 MB (+576kb) [22:04:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 50 MB. Current time: 4/12/19 1:46:26 PM CDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1571 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 50 MB. Current time: 4/12/19 2:16:26 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 50 MB. Current time: 4/12/19 2:46:27 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 50 MB. Current time: 4/12/19 3:16:27 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 50 MB. Current time: 4/12/19 3:46:27 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 50 MB. Current time: 4/12/19 4:16:28 PM CDT
+// Elapsed time: 87357 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1528.508 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 35 seconds
+selectCodeEditor("SecurityCameraCode.v", 426, 220); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "user_input.v", 1); // k (j, ck)
+selectCodeEditor("user_input.v", 227, 232); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "DEB", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "DEB"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "DEB"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "DEB"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "DEB"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "DEB"); // l (aQ, ck)
+selectCodeEditor("user_input.v", 23, 445); // ce (w, ck)
+selectCodeEditor("user_input.v", 20, 452); // ce (w, ck)
+selectCodeEditor("user_input.v", 21, 432); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Apr 12 16:29:55 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 204ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 53 seconds
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (Q, ah): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Fri Apr 12 16:30:49 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 18 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 395, 95); // n (B, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 135 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Apr 12 16:33:24 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 77 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a200t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/SecurityCameraCode.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 

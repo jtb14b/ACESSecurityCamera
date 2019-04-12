@@ -196,8 +196,8 @@ module user_input
         //end 
    end
    
- //  always @ (MESSAGE)
- //   DEBUG <= MESSAGE;
+   always @ (MESSAGE)
+    DEBUG <= MESSAGE;
    
    
 
