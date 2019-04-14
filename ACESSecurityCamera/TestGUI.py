@@ -32,7 +32,7 @@
 
 import sys
 from PyQt5.QtWidgets import QApplication, QDialog
-from Security_Camera_2 import Ui_Dialog
+from Security_Camera_4 import Ui_Dialog
 
 app = QApplication(sys.argv)
 window = QDialog()
