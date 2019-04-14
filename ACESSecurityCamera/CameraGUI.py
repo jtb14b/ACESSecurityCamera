@@ -52,4 +52,5 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 
     if(b.ui.mySer.ser.isOpen()):
+        b.ui.reset()
         b.ui.mySer.ser.close()
