@@ -1,0 +1,482 @@
+/********************************************************************************
+** Form generated from reading UI file 'Security CameraoiHtIa.ui'
+**
+** Created by: Qt User Interface Compiler version 5.13.0
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef SECURITY_20_CAMERAOIHTIA_H
+#define SECURITY_20_CAMERAOIHTIA_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QIcon>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QVBoxLayout>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_Dialog
+{
+public:
+    QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QLabel *label_2;
+    QGridLayout *gridLayout_2;
+    QPushButton *pushButton_7;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_8;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_9;
+    QPushButton *pushButton_6;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *pushButton_3;
+    QRadioButton *radioButton;
+    QLabel *label_3;
+    QLabel *label_4;
+    QGridLayout *gridLayout;
+    QSpacerItem *horizontalSpacer_10;
+    QSpacerItem *horizontalSpacer_12;
+    QSpacerItem *horizontalSpacer_13;
+    QSpacerItem *horizontalSpacer_9;
+    QSpacerItem *horizontalSpacer_8;
+    QSpacerItem *horizontalSpacer_6;
+    QSpacerItem *horizontalSpacer_7;
+    QSpacerItem *horizontalSpacer;
+    QSpacerItem *horizontalSpacer_2;
+    QPushButton *pushButton_12;
+    QSpacerItem *horizontalSpacer_4;
+    QPushButton *pushButton_11;
+    QPushButton *pushButton_13;
+    QSpacerItem *horizontalSpacer_3;
+    QSpacerItem *horizontalSpacer_11;
+    QPushButton *pushButton_10;
+    QSpacerItem *horizontalSpacer_5;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *label;
+    QVBoxLayout *verticalLayout_2;
+    QSlider *horizontalSlider;
+    QHBoxLayout *horizontalLayout_5;
+    QLabel *label_7;
+    QSpacerItem *horizontalSpacer_22;
+    QLabel *label_13;
+    QSpacerItem *horizontalSpacer_21;
+    QLabel *label_9;
+    QSpacerItem *horizontalSpacer_20;
+    QLabel *label_11;
+    QSpacerItem *horizontalSpacer_19;
+    QLabel *label_14;
+    QSpacerItem *horizontalSpacer_18;
+    QLabel *label_6;
+    QSpacerItem *horizontalSpacer_17;
+    QLabel *label_10;
+    QSpacerItem *horizontalSpacer_16;
+    QLabel *label_8;
+    QSpacerItem *horizontalSpacer_15;
+    QLabel *label_12;
+    QSpacerItem *horizontalSpacer_14;
+    QLabel *label_5;
+    QHBoxLayout *horizontalLayout_4;
+    QPushButton *pushButton_16;
+    QPushButton *pushButton_14;
+
+    void setupUi(QDialog *Dialog)
+    {
+        if (Dialog->objectName().isEmpty())
+            Dialog->setObjectName(QString::fromUtf8("Dialog"));
+        Dialog->setEnabled(true);
+        Dialog->resize(684, 729);
+        Dialog->setCursor(QCursor(Qt::SplitHCursor));
+        Dialog->setMouseTracking(false);
+        Dialog->setFocusPolicy(Qt::WheelFocus);
+        Dialog->setContextMenuPolicy(Qt::PreventContextMenu);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("ACESLogo (1).png"), QSize(), QIcon::Normal, QIcon::Off);
+        Dialog->setWindowIcon(icon);
+        Dialog->setWindowOpacity(1.000000000000000);
+        Dialog->setToolTipDuration(-2);
+        Dialog->setLayoutDirection(Qt::RightToLeft);
+        Dialog->setSizeGripEnabled(false);
+        verticalLayout = new QVBoxLayout(Dialog);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        pushButton = new QPushButton(Dialog);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setCursor(QCursor(Qt::ArrowCursor));
+        pushButton->setFocusPolicy(Qt::WheelFocus);
+        pushButton->setContextMenuPolicy(Qt::NoContextMenu);
+        pushButton->setCheckable(false);
+
+        horizontalLayout->addWidget(pushButton);
+
+        pushButton_2 = new QPushButton(Dialog);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setIconSize(QSize(9, 10));
+        pushButton_2->setAutoDefault(true);
+
+        horizontalLayout->addWidget(pushButton_2);
+
+
+        verticalLayout->addLayout(horizontalLayout);
+
+        label_2 = new QLabel(Dialog);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        verticalLayout->addWidget(label_2);
+
+        gridLayout_2 = new QGridLayout();
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        pushButton_7 = new QPushButton(Dialog);
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+
+        gridLayout_2->addWidget(pushButton_7, 3, 1, 1, 1);
+
+        pushButton_4 = new QPushButton(Dialog);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+
+        gridLayout_2->addWidget(pushButton_4, 5, 1, 1, 1);
+
+        pushButton_8 = new QPushButton(Dialog);
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+
+        gridLayout_2->addWidget(pushButton_8, 3, 0, 1, 1);
+
+        pushButton_5 = new QPushButton(Dialog);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+
+        gridLayout_2->addWidget(pushButton_5, 5, 0, 1, 1);
+
+        pushButton_9 = new QPushButton(Dialog);
+        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+
+        gridLayout_2->addWidget(pushButton_9, 2, 1, 1, 1);
+
+        pushButton_6 = new QPushButton(Dialog);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+
+        gridLayout_2->addWidget(pushButton_6, 2, 0, 1, 1);
+
+
+        verticalLayout->addLayout(gridLayout_2);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        pushButton_3 = new QPushButton(Dialog);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+
+        horizontalLayout_2->addWidget(pushButton_3);
+
+        radioButton = new QRadioButton(Dialog);
+        radioButton->setObjectName(QString::fromUtf8("radioButton"));
+
+        horizontalLayout_2->addWidget(radioButton);
+
+        label_3 = new QLabel(Dialog);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+
+        horizontalLayout_2->addWidget(label_3);
+
+
+        verticalLayout->addLayout(horizontalLayout_2);
+
+        label_4 = new QLabel(Dialog);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+
+        verticalLayout->addWidget(label_4);
+
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        horizontalSpacer_10 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_10, 4, 4, 1, 1);
+
+        horizontalSpacer_12 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_12, 0, 7, 1, 1);
+
+        horizontalSpacer_13 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_13, 0, 5, 1, 1);
+
+        horizontalSpacer_9 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_9, 0, 9, 1, 1);
+
+        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_8, 0, 3, 1, 1);
+
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_6, 1, 2, 1, 1);
+
+        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_7, 1, 10, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 0, 8, 1, 1);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_2, 0, 4, 1, 1);
+
+        pushButton_12 = new QPushButton(Dialog);
+        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
+        QFont font;
+        font.setUnderline(true);
+        pushButton_12->setFont(font);
+
+        gridLayout->addWidget(pushButton_12, 0, 6, 1, 1);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_4, 1, 1, 1, 1);
+
+        pushButton_11 = new QPushButton(Dialog);
+        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+        pushButton_11->setFont(font);
+
+        gridLayout->addWidget(pushButton_11, 1, 4, 1, 1);
+
+        pushButton_13 = new QPushButton(Dialog);
+        pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
+        pushButton_13->setFont(font);
+
+        gridLayout->addWidget(pushButton_13, 1, 8, 1, 1);
+
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_3, 1, 11, 1, 1);
+
+        horizontalSpacer_11 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_11, 4, 8, 1, 1);
+
+        pushButton_10 = new QPushButton(Dialog);
+        pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
+        pushButton_10->setFont(font);
+
+        gridLayout->addWidget(pushButton_10, 4, 6, 1, 1);
+
+        horizontalSpacer_5 = new QSpacerItem(10, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_5, 1, 6, 1, 1);
+
+
+        verticalLayout->addLayout(gridLayout);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        label = new QLabel(Dialog);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        horizontalLayout_3->addWidget(label);
+
+
+        verticalLayout->addLayout(horizontalLayout_3);
+
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        horizontalSlider = new QSlider(Dialog);
+        horizontalSlider->setObjectName(QString::fromUtf8("horizontalSlider"));
+        horizontalSlider->setPageStep(10);
+        horizontalSlider->setOrientation(Qt::Horizontal);
+        horizontalSlider->setTickPosition(QSlider::TicksBelow);
+        horizontalSlider->setTickInterval(11);
+
+        verticalLayout_2->addWidget(horizontalSlider);
+
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        label_7 = new QLabel(Dialog);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_5->addWidget(label_7);
+
+        horizontalSpacer_22 = new QSpacerItem(34, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_22);
+
+        label_13 = new QLabel(Dialog);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setMaximumSize(QSize(16777213, 16777215));
+
+        horizontalLayout_5->addWidget(label_13);
+
+        horizontalSpacer_21 = new QSpacerItem(50, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_21);
+
+        label_9 = new QLabel(Dialog);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        horizontalLayout_5->addWidget(label_9);
+
+        horizontalSpacer_20 = new QSpacerItem(47, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_20);
+
+        label_11 = new QLabel(Dialog);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+
+        horizontalLayout_5->addWidget(label_11);
+
+        horizontalSpacer_19 = new QSpacerItem(45, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_19);
+
+        label_14 = new QLabel(Dialog);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+
+        horizontalLayout_5->addWidget(label_14);
+
+        horizontalSpacer_18 = new QSpacerItem(46, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_18);
+
+        label_6 = new QLabel(Dialog);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_5->addWidget(label_6);
+
+        horizontalSpacer_17 = new QSpacerItem(49, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_17);
+
+        label_10 = new QLabel(Dialog);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+
+        horizontalLayout_5->addWidget(label_10);
+
+        horizontalSpacer_16 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_16);
+
+        label_8 = new QLabel(Dialog);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+
+        horizontalLayout_5->addWidget(label_8);
+
+        horizontalSpacer_15 = new QSpacerItem(44, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_15);
+
+        label_12 = new QLabel(Dialog);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        horizontalLayout_5->addWidget(label_12);
+
+        horizontalSpacer_14 = new QSpacerItem(36, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_14);
+
+        label_5 = new QLabel(Dialog);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+
+        horizontalLayout_5->addWidget(label_5);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_5);
+
+
+        verticalLayout->addLayout(verticalLayout_2);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        pushButton_16 = new QPushButton(Dialog);
+        pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
+
+        horizontalLayout_4->addWidget(pushButton_16);
+
+        pushButton_14 = new QPushButton(Dialog);
+        pushButton_14->setObjectName(QString::fromUtf8("pushButton_14"));
+
+        horizontalLayout_4->addWidget(pushButton_14);
+
+
+        verticalLayout->addLayout(horizontalLayout_4);
+
+        QWidget::setTabOrder(pushButton, pushButton_14);
+        QWidget::setTabOrder(pushButton_14, pushButton_16);
+        QWidget::setTabOrder(pushButton_16, pushButton_2);
+        QWidget::setTabOrder(pushButton_2, pushButton_7);
+        QWidget::setTabOrder(pushButton_7, pushButton_4);
+        QWidget::setTabOrder(pushButton_4, pushButton_8);
+        QWidget::setTabOrder(pushButton_8, pushButton_5);
+        QWidget::setTabOrder(pushButton_5, pushButton_9);
+        QWidget::setTabOrder(pushButton_9, pushButton_6);
+        QWidget::setTabOrder(pushButton_6, pushButton_3);
+        QWidget::setTabOrder(pushButton_3, radioButton);
+        QWidget::setTabOrder(radioButton, pushButton_12);
+        QWidget::setTabOrder(pushButton_12, pushButton_11);
+        QWidget::setTabOrder(pushButton_11, pushButton_13);
+        QWidget::setTabOrder(pushButton_13, pushButton_10);
+
+        retranslateUi(Dialog);
+
+        pushButton_2->setDefault(false);
+
+
+        QMetaObject::connectSlotsByName(Dialog);
+    } // setupUi
+
+    void retranslateUi(QDialog *Dialog)
+    {
+        Dialog->setWindowTitle(QCoreApplication::translate("Dialog", "A.C.E.S.", nullptr));
+        pushButton->setText(QCoreApplication::translate("Dialog", "Automatic", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Dialog", "Power", nullptr));
+        label_2->setText(QCoreApplication::translate("Dialog", "Modes:", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("Dialog", "Daylight", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("Dialog", "Disffused Sunlight", nullptr));
+        pushButton_8->setText(QCoreApplication::translate("Dialog", "Shade", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("Dialog", "Direct Sunlight", nullptr));
+        pushButton_9->setText(QCoreApplication::translate("Dialog", "Sunrise/Sunset", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("Dialog", "Overcast", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("Dialog", "Image Capture", nullptr));
+        radioButton->setText(QCoreApplication::translate("Dialog", "Record", nullptr));
+        label_3->setText(QCoreApplication::translate("Dialog", "Video:", nullptr));
+        label_4->setText(QCoreApplication::translate("Dialog", "Azimuth and Elevation:", nullptr));
+        pushButton_12->setText(QCoreApplication::translate("Dialog", "Up", nullptr));
+        pushButton_11->setText(QCoreApplication::translate("Dialog", "Right", nullptr));
+        pushButton_13->setText(QCoreApplication::translate("Dialog", "Left", nullptr));
+        pushButton_10->setText(QCoreApplication::translate("Dialog", "Down", nullptr));
+        label->setText(QCoreApplication::translate("Dialog", "Zoom", nullptr));
+        label_7->setText(QCoreApplication::translate("Dialog", "57.0  mm", nullptr));
+        label_13->setText(QCoreApplication::translate("Dialog", "51.3 mm", nullptr));
+        label_9->setText(QCoreApplication::translate("Dialog", "45.6 mm", nullptr));
+        label_11->setText(QCoreApplication::translate("Dialog", "39.9 mm", nullptr));
+        label_14->setText(QCoreApplication::translate("Dialog", "34.2 mm", nullptr));
+        label_6->setText(QCoreApplication::translate("Dialog", "28.5 mm", nullptr));
+        label_10->setText(QCoreApplication::translate("Dialog", "22.8 mm", nullptr));
+        label_8->setText(QCoreApplication::translate("Dialog", "17.1 mm", nullptr));
+        label_12->setText(QCoreApplication::translate("Dialog", "11.4 mm", nullptr));
+        label_5->setText(QCoreApplication::translate("Dialog", "5.7 mm", nullptr));
+        pushButton_16->setText(QCoreApplication::translate("Dialog", "Max Zoom in", nullptr));
+        pushButton_14->setText(QCoreApplication::translate("Dialog", "Max Zoom out", nullptr));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class Dialog: public Ui_Dialog {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // SECURITY_20_CAMERAOIHTIA_H

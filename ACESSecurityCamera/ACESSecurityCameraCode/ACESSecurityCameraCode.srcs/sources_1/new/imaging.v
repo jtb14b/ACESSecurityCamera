@@ -28,7 +28,11 @@ module imaging(
     input LV,
     input [11:0] data,
     output reg trigger,
-    output reg [7:0] DEBUG
+    output reg [7:0] DEBUG,
+    output reg [11:0] dout,
+    output reg DVo,
+    output reg LVo,
+    output reg FVo
     );
     
     reg [7:0] toFPA = 8'h00;
@@ -38,8 +42,13 @@ module imaging(
     reg send = 0;
     wire done;
     
+    reg cl_send = 0;
+    
    //  reg trigger = 0;
    
+    reg [11:0] rawData [0:9][0:10];
+    reg [9:0] rowIndex = 0;
+    reg [10:0] colIndex = 0;
     
     localparam
         WRITE = 1'b0,
@@ -53,6 +62,16 @@ module imaging(
         .dir(dir),
         .send(send),
         .done(done)
+        );
+        
+    camera_link CL(
+        .clk(clk),
+   //     .din(rawData),
+        .DV(DVo),
+        .LV(LVo),
+        .FV(FVo),
+        .dout(dout),
+        .send(cl_send)
         );
     
     localparam [3:0]
@@ -83,9 +102,7 @@ module imaging(
   //  reg rawData6[0:719][0:1279];
   //  reg rawData7[0:719][0:1279];
     
-    reg [11:0] rawData [0:9][0:10];
-    reg [9:0] rowIndex = 0;
-    reg [10:0] colIndex = 0;
+    
     
     reg frameDone = 0;
     
