@@ -8,11 +8,12 @@
 #include <Adafruit_MotorShield.h>
 #endif
 
-#define SSIZE 100
+#define SSIZEAZ 100
+#define SSIZEEL 5
 #define AZMIN -547
 #define AZMAX 547
-#define ELMIN -250
-#define ELMAX 250
+#define ELMIN -15
+#define ELMAX 15
 
 char buf [100];
 volatile byte pos;
@@ -42,7 +43,7 @@ void setup (void)
   AFMS2.begin();
 
   AZMotor->setSpeed(40);
-  ELMotor->setSpeed(40);
+  ELMotor->setSpeed(.001);
   #endif
 
   // turn on SPI in slave mode
@@ -144,19 +145,19 @@ void loop (void)
         {
           case 'A':
             //Pan Left
-            panLeft(SSIZE);
+            panLeft(SSIZEAZ);
             break;
           case 'B':
             //Pan Right
-            panRight(SSIZE);
+            panRight(SSIZEAZ);
             break;
           case 'C':
             //Tilt Up
-            tiltUp(SSIZE);
+            tiltUp(SSIZEEL);
             break;
           case 'D':
             //Tilt Down
-            tiltDown(SSIZE);
+            tiltDown(SSIZEEL);
             break;
           case 'E':
             //Zoom In

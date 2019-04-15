@@ -29,10 +29,10 @@ module imaging(
     input [11:0] data,
     output reg trigger,
     output reg [7:0] DEBUG,
-    output reg [11:0] dout,
-    output reg DVo,
-    output reg LVo,
-    output reg FVo
+    output wire [11:0] dout,
+    output wire DVo,
+    output wire LVo,
+    output wire FVo
     );
     
     reg [7:0] toFPA = 8'h00;
@@ -47,8 +47,14 @@ module imaging(
    //  reg trigger = 0;
    
     reg [11:0] rawData [0:9][0:10];
+    reg [11:0] demoData [0:9][0:10];
     reg [9:0] rowIndex = 0;
     reg [10:0] colIndex = 0;
+    
+    localparam
+        RED = 12'h00f,
+        GREEN = 12'h0f0,
+        BLUE = 12'hf00;
     
     localparam
         WRITE = 1'b0,
@@ -66,7 +72,7 @@ module imaging(
         
     camera_link CL(
         .clk(clk),
-   //     .din(rawData),
+   //     .din(demoData),
         .DV(DVo),
         .LV(LVo),
         .FV(FVo),
@@ -119,6 +125,8 @@ module imaging(
     always @ (cspace or tempdata) begin
         if(cspace == RGB)
             */
+    
+    
     
     always @(posedge clk) begin
         cstate = nstate;
@@ -186,6 +194,25 @@ module imaging(
                     //Group them
                 //Output new array
                 
+                for(rowIndex = 1; rowIndex < 720; rowIndex = rowIndex + 1) begin
+                    for(colIndex = 1; colIndex < 1280; colIndex = colIndex +1) begin
+                        if(rowIndex % 2 == colIndex % 2) begin //GREEN
+                            demoData[rowIndex][colIndex] =  (rawData[rowIndex][colIndex] & GREEN) | 
+                                                            (rawData[rowIndex-1][colIndex] & RED) |
+                                                            (rawData[rowIndex][colIndex-1] & BLUE);
+                        end else if((rowIndex % 2 == 1) && (colIndex % 2 == 0)) begin //BLUE
+                            demoData[rowIndex][colIndex] =  (rawData[rowIndex-1][colIndex] & GREEN) | 
+                                                            (rawData[rowIndex-1][colIndex-1] & RED) |
+                                                            (rawData[rowIndex][colIndex] & BLUE);
+                        end else if((rowIndex % 2 == 0) && (colIndex % 2 == 1)) begin //RED
+                            demoData[rowIndex][colIndex] =  (rawData[rowIndex-1][colIndex] & GREEN) | 
+                                                            (rawData[rowIndex][colIndex] & RED) |
+                                                            (rawData[rowIndex-1][colIndex-1] & BLUE);
+                        end
+                    end
+                end
+                            
+                
                 nstate = WhiteBalance;
             end
             
@@ -247,6 +274,10 @@ module imaging(
             
             Output : begin
                 //Output through FMC
+                
+                cl_send = 0;
+                cl_send = 1;
+                cl_send = 0;
                 
                 nstate = Trigger;
             end

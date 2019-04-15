@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: A.C.E.S.
+// Engineer: Jared Barker
 // 
 // Create Date: 01/24/2019 02:15:25 PM
 // Design Name: 
 // Module Name: SecurityCameraCode
 // Project Name: 
-// Target Devices: 
+// Target Devices: Nexys Video FPGA
 // Tool Versions: 
 // Description: 
 // 
@@ -18,26 +18,14 @@
 // Additional Comments:
 // 
 
-//////////////////////////////////////////////////////////////////////
-// File Downloaded from http://www.nandland.com
-//////////////////////////////////////////////////////////////////////
-// This file contains the UART Receiver.  This receiver is able to
-// receive 8 bits of serial data, one start bit, one stop bit,
-// and no parity bit.  When receive is complete o_rx_dv will be
-// driven high for one clock cycle.
-// 
-// Set Parameter CLKS_PER_BIT as follows:
-// CLKS_PER_BIT = (Frequency of i_Clock)/(Frequency of UART)
-// Example: 10 MHz Clock, 115200 baud UART <We have a 100 MHz clock --Jared>
-// (10000000)/(115200) = 87
   
 module SecurityCameraCode
      (
       input        clk,
       input        uart_tx_in,
       output wire [7:0] led,
-      output wire [7:0] ja
- /*     output wire fmc_la_p02,//M18, //H7,
+      output wire [7:0] ja,
+      output wire fmc_la_p02,//M18, //H7, //Start non-imaging comment block here
       input       L18, //  H8,
       input       fmc_la17_cc_n,//B18,//  D21,
       input       M15,//  G12,
@@ -52,7 +40,7 @@ module SecurityCameraCode
       input L14,//H16,
       input G18,//G19,
       input J20,//D8,
-      input L13//H14 */
+      input L13//H14 //End here
       );
       
       wire MTR;
@@ -78,7 +66,7 @@ module SecurityCameraCode
       
       wire CLK;
       
-  //    reg [11:0] FPAData = 12'h000;
+      reg [11:0] FPAData = 12'h000;
       
       user_input UI(
         .clk(dummy_clk5), //!!!!!!!!!!!!
@@ -103,16 +91,16 @@ module SecurityCameraCode
         .MOSI(ja[2])
         );
         
- /*     imaging IMG(
+      imaging IMG(
         .clk(CLK),
         .IMMD(IMMD),
         .PIXCLK(L18),
         .FV(fmc_la17_cc_n),
         .LV(M15),
         .data(FPAData),
-        .trigger(M18),
+        .trigger(fmc_la_p02),
         .DEBUG(led)
-        );*/
+        );
         
       xadc_wiz_0 TEMPMON(
         .dclk_in(clk),
@@ -150,7 +138,7 @@ module SecurityCameraCode
             dummy_clk5 = ~dummy_clk5;
         end
         
- /*       always @(K21) begin
+        always @(K21) begin
             FPAData[0] <= K21;
         end
             
@@ -198,7 +186,7 @@ module SecurityCameraCode
             FPAData[11] <= L13;
         end
         
-        */
+        
        
         
 endmodule
