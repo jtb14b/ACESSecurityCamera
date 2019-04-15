@@ -3,11 +3,17 @@
 Abilene Camera Engineering Solutions (A.C.E.S.)
 
 Team Members:
+
   -Jared Barker
+
   -Daytrieon Dean
+
   -Sandra Martinez
+
   -Zach Moses
+
   -Griffin Quintero
+  
 
 A.C.E.S. has been tasked with designing a
 security camera that will survey an entire
