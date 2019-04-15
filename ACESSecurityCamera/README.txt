@@ -3,6 +3,7 @@ The following must be done to use the GUI:
 1) Install Python37
     Found at: https://www.python.org/downloads/
     Change PATH variable location of python.exe
+        Can be changed in advanced settings of python installer
 2) Install PySerial
     Open Command Line
     'pip install pyserial'
@@ -11,14 +12,20 @@ The following must be done to use the GUI:
     'pip install PyQt5'
 4) Run the GUI
     Open Command Line
-    'python CameraGUI.py'
+    'python GUICode\CameraGUI.py'
     or
-    'python CameraGUI.py -p <COM Port>'
+    'python GUICode\CameraGUI.py -p <COM Port>'
 
 Possible other required steps:
 
-Install pip
-    https://bootstrap.pypa.io/get-pip.py
+    Check COM port in Device Manager
+        Specify in Command Line Launcher of GUI using "-p <COM Port>"
 
-Configure virtual COM ports
-    Needs further research
+Unlikely required steps:
+
+    Install pip
+        https://bootstrap.pypa.io/get-pip.py
+
+    Change specified python location in pyuic5.bat
+
+    Configure virtual COM ports
