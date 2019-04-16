@@ -33,3 +33,9 @@ reset_run synth_1
 launch_runs synth_1 -jobs 2
 [Mon Apr 15 17:18:31 2019] Launched synth_1...
 Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Mon Apr 15 18:02:33 2019] Launched impl_1...
+Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Apr 15 18:06:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log

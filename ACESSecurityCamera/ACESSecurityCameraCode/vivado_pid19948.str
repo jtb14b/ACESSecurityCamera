@@ -389,3 +389,42 @@ selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Progra
 // Tcl Message: [Mon Apr 15 18:06:30 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
 // TclEventType: RUN_COMPLETED
 // ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 83 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 47 MB. Current time: 4/15/19 6:27:22 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 6:57:22 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 7:27:23 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 7:57:23 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 8:27:23 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 8:57:24 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 9:27:24 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 9:57:24 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 10:27:25 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 10:57:25 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 11:27:26 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/15/19 11:57:26 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 12:27:26 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 12:57:27 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 1:27:27 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 47 MB. Current time: 4/16/19 1:57:27 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 2:27:28 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 47 MB. Current time: 4/16/19 2:57:28 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 3:27:28 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 3:57:29 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 4:27:29 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 4:57:29 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 5:27:30 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 5:57:30 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 6:27:31 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 6:57:31 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 7:27:31 AM CDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1101 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 47 MB. Current time: 4/16/19 7:57:32 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 8:27:32 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 47 MB. Current time: 4/16/19 8:57:33 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 46 MB. Current time: 4/16/19 9:27:33 AM CDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5224 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 47 MB. Current time: 4/16/19 9:57:34 AM CDT

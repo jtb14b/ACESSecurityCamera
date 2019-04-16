@@ -313,8 +313,8 @@ class Ui_Dialog(object):
                 print("Serial Open")
                 self.reset()
             except:
-                #print("Could not connect to %s port. Try again.") %port
-                print("Nope")
+                print("Could not connect to %s port. Try again.") %port
+                #print("Nope")
 
             self.powerState = 1
         else:
