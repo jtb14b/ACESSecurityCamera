@@ -281,6 +281,16 @@ class Ui_Dialog(object):
         self.pushButton.clicked.connect(self.toggleAuto)
         self.pushButton_2.clicked.connect(self.powerToggle)
 
+        self.pushButton_4.setDisabled(True)
+        self.pushButton_5.setDisabled(True)
+        self.pushButton_6.setDisabled(True)
+        self.pushButton_7.setDisabled(True)
+        self.pushButton_8.setDisabled(True)
+        self.pushButton_9.setDisabled(True)
+        self.pushButton_14.setDisabled(True)
+        self.pushButton_16.setDisabled(True)
+        self.horizontalSlider.setDisabled(True)
+
 
     def tiltUp(self):
         print("Tilt Up")
