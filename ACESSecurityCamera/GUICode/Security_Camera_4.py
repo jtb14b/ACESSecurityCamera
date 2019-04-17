@@ -127,15 +127,17 @@ class Ui_Dialog(object):
         self.pushButton_13 = QtWidgets.QPushButton(Dialog)
         self.pushButton_13.setObjectName("pushButton_13")
         self.gridLayout.addWidget(self.pushButton_13, 5, 1, 1, 1)
-        self.lineEdit = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit = QtWidgets.QLineEdit(Dialog) #Dialog
         self.lineEdit.setMaxLength(32751)
+        self.lineEdit.setReadOnly(True)
         self.lineEdit.setObjectName("lineEdit")
         self.gridLayout.addWidget(self.lineEdit, 0, 0, 1, 1)
         self.label_16 = QtWidgets.QLabel(Dialog)
         self.label_16.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_16.setObjectName("label_16")
         self.gridLayout.addWidget(self.label_16, 0, 1, 1, 1)
-        self.lineEdit_2 = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit_2 = QtWidgets.QLineEdit(Dialog) #Dialog
+        self.lineEdit_2.setReadOnly(True)
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.gridLayout.addWidget(self.lineEdit_2, 1, 0, 1, 1)
         self.label_17 = QtWidgets.QLabel(Dialog)
@@ -304,21 +306,25 @@ class Ui_Dialog(object):
         print("Tilt Up")
         self.mySer.SendSerial('C')
         self.elPos += 5
+        self.lineEdit.setText(str(self.elPos))
 
     def tiltDown(self):
         print("Tilt Down")
         self.mySer.SendSerial('D')
         self.elPos -= 5
+        self.lineEdit.setText(str(self.elPos))
 
     def panLeft(self):
         print("Pan Left")
         self.mySer.SendSerial('A')
         self.azPos += 100
+        self.lineEdit_2.setText(str(self.azPos))
 
     def panRight(self):
         print("Pan Right")
         self.mySer.SendSerial('B')
         self.azPos -= 100
+        self.lineEdit_2.setText(str(self.azPos))
 
     def reset(self):
         print("Reset")
@@ -326,11 +332,17 @@ class Ui_Dialog(object):
         self.azPos = 0
         self.elPos = 0
 
+        self.lineEdit.setText(str(self.elPos))
+        self.lineEdit_2.setText(str(self.azPos))
+
     def toggleAuto(self):
         print("Toggle Operation Mode")
         self.mySer.SendSerial('H')
         self.azPos = 0
         self.elPos = 0
+
+        self.lineEdit.setText(str(self.elPos))
+        self.lineEdit_2.setText(str(self.azPos))
 
     def zoom(self):
         zoomToVal = 11 - self.horizontalSlider.value()
