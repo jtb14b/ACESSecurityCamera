@@ -18,14 +18,14 @@ class myser():
             print(message)
 
     def OpenSerial(self, COM, Baud, Parity, sBits, dBits, Timeout):
-    #    try:
-        self.ser = serial.Serial(port=COM, baudrate=Baud, parity=Parity,
+        try:
+            self.ser = serial.Serial(port=COM, baudrate=Baud, parity=Parity,
                          stopbits=sBits, bytesize=dBits, timeout=Timeout)
-    #    except Exception as ex:
+        except Exception as ex:
 
-        template = "op: An exception of type {0} occured. Arguments:\n{1!r}"
-        message = template.format(type(ex).__name__, ex.args)
-        print(message)
+            template = "op: An exception of type {0} occured. Arguments:\n{1!r}"
+            message = template.format(type(ex).__name__, ex.args)
+            print(message)
 
     def SendSerial(self, data):
         try:

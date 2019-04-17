@@ -297,34 +297,34 @@ class Ui_Dialog(object):
     def tiltUp(self):
         print("Tilt Up")
         self.mySer.SendSerial('C')
-        elPos += 5
+        #elPos += 5
 
     def tiltDown(self):
         print("Tilt Down")
         self.mySer.SendSerial('D')
-        elPos -= 5
+        #elPos -= 5
 
     def panLeft(self):
         print("Pan Left")
         self.mySer.SendSerial('A')
-        azPos += 100
+        #azPos += 100
 
     def panRight(self):
         print("Pan Right")
         self.mySer.SendSerial('B')
-        azPos -= 100
+        #azPos -= 100
 
     def reset(self):
         print("Reset")
         self.mySer.SendSerial('G')
-        azPos = 0
-        elPos = 0
+        #azPos = 0
+        #elPos = 0
 
     def toggleAuto(self):
         print("Toggle Operation Mode")
         self.mySer.SendSerial('H')
-        azPos = 0
-        elPos = 0
+        #azPos = 0
+        #elPos = 0
 
     def powerToggle(self):
         if not self.powerState:
@@ -333,7 +333,7 @@ class Ui_Dialog(object):
                 print("Serial Open")
                 self.reset()
             except:
-                print("Could not connect to %s port. Try again.") %port
+                print("Could not connect to port. Try again.")
                 #print("Nope")
 
             self.powerState = 1
