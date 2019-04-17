@@ -62,7 +62,7 @@ class myser():
         return
 
 
-mySer = myser()
-mySer.OpenSerial('COM1', 19200, 'N', 1, 8, 0)
-data = '010111010001'
-mySer.SendSerial(data)
+#mySer = myser()
+#mySer.OpenSerial('COM1', 19200, 'N', 1, 8, 0)
+#data = '010111010001'
+#mySer.SendSerial(data)
