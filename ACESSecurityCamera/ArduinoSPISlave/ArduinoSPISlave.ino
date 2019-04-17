@@ -10,6 +10,7 @@
 
 #define SSIZEAZ 100
 #define SSIZEEL 5
+#define SSIZEZM
 #define AZMIN -547
 #define AZMAX 547
 #define ELMIN -15
@@ -26,17 +27,19 @@ int elPos;
 volatile int auto_index;
 
 #ifdef DEBUG
-Adafruit_MotorShield AFMS = Adafruit_MotorShield();
+Adafruit_MotorShield AFMS = Adafruit_MotorShield(0x61);
 Adafruit_MotorShield AFMS2 = Adafruit_MotorShield();
 
 Adafruit_StepperMotor *AZMotor = AFMS.getStepper(200, 1);
 Adafruit_StepperMotor *ELMotor = AFMS.getStepper(200, 2);
+
+Adafruit_DCMotor *ZoomMotor = AFMS.getMotor(1);
 #endif
 
 
 void setup (void)
 {
-  Serial.begin (115200);// debugging
+  Serial.begin(115200);// debugging
 
   #ifdef DEBUG
   AFMS.begin();
@@ -44,6 +47,7 @@ void setup (void)
 
   AZMotor->setSpeed(40);
   ELMotor->setSpeed(.001);
+  ZoomMotor->setSpeed(10);
   #endif
 
   // turn on SPI in slave mode
@@ -161,9 +165,11 @@ void loop (void)
             break;
           case 'E':
             //Zoom In
+            zoomIn(SSIZEZM);
             break;
           case 'F':
             //Zoom Out
+            zoomOut(SSIZEZM);
             break;
           case 'G':
             //Reset
@@ -283,4 +289,24 @@ void posReset()
 
     Serial.println("Elevation Position:");
     Serial.println(elPos);
+}
+
+void zoomIn()
+{
+  Serial.println("Zoom In");
+  #ifdef DEBUG
+  ZoomMotor->run(FORWARD);
+  delay(100);
+  ZoomMotor->run(RELEASE);
+  #endif
+}
+
+void zoomOut()
+{
+  Serial.println("Zoom Out");
+  #ifdef DEBUG
+  ZoomMotor->run(BACKWARD);
+  delay(100);
+  ZoomMotor->run(RELEASE);
+  #endif
 }

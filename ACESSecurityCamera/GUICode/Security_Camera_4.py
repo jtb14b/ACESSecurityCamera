@@ -15,6 +15,7 @@ class Ui_Dialog(object):
     port = 'COM1'
     azPos = 0
     elPos = 0
+    zoomPos = 0
 
     def setupUi(self, Dialog, port):
         self.powerState = 0
@@ -163,7 +164,9 @@ class Ui_Dialog(object):
         self.horizontalSlider.setPageStep(10)
         self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider.setTickPosition(QtWidgets.QSlider.TicksBelow)
-        self.horizontalSlider.setTickInterval(11)
+        self.horizontalSlider.setMinimum(1)
+        self.horizontalSlider.setMaximum(10)
+        self.horizontalSlider.setTickInterval(1)
         self.horizontalSlider.setObjectName("horizontalSlider")
         self.Zoom.addWidget(self.horizontalSlider)
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
@@ -282,6 +285,9 @@ class Ui_Dialog(object):
         self.pushButton_3.clicked.connect(self.reset)
         self.pushButton.clicked.connect(self.toggleAuto)
         self.pushButton_2.clicked.connect(self.powerToggle)
+        self.pushButton_16.clicked.connect(self.zoomInMax)
+        self.pushButton_14.clicked.connect(self.zoomOutMax)
+        self.horizontalSlider.valueChanged.connect(self.zoom)
 
         self.pushButton_4.setDisabled(True)
         self.pushButton_5.setDisabled(True)
@@ -289,9 +295,9 @@ class Ui_Dialog(object):
         self.pushButton_7.setDisabled(True)
         self.pushButton_8.setDisabled(True)
         self.pushButton_9.setDisabled(True)
-        self.pushButton_14.setDisabled(True)
-        self.pushButton_16.setDisabled(True)
-        self.horizontalSlider.setDisabled(True)
+        #self.pushButton_14.setDisabled(True)
+        #self.pushButton_16.setDisabled(True)
+        #self.horizontalSlider.setDisabled(True)
 
 
     def tiltUp(self):
@@ -325,6 +331,32 @@ class Ui_Dialog(object):
         self.mySer.SendSerial('H')
         #azPos = 0
         #elPos = 0
+
+    def zoom(self):
+        zoomToVal = 11 - self.horizontalSlider.value()
+        print("Zooming to:", zoomToVal)
+        if zoomToVal > self.zoomPos:
+            for x in range(zoomToVal - self.zoomPos):
+                self.mySer.SendSerial('E')
+        else:
+            for x in range(self.zoomPos - zoomToVal):
+                self.mySer.SendSerial('F')
+        self.zoomPos = zoomToVal
+        print(self.zoomPos)
+
+    def zoomInMax(self):
+        print("Max Zoom In")
+        for x in range(10-self.zoomPos):
+            self.mySer.SendSerial('E')
+        self.zoomPos = 10
+        print(self.zoomPos)
+
+    def zoomOutMax(self):
+        print("Max Zoom Out")
+        for x in range(self.zoomPos):
+            self.mySer.SendSerial('F')
+        self.zoomPos = 1
+        print(self.zoomPos)
 
     def powerToggle(self):
         if not self.powerState:
