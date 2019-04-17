@@ -74,7 +74,8 @@ _xmsgs/
 
 *.ip_user_files/
 ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs
-ACESSecurityCamera/__pycache__
+ACESSecurityCamera/__pycache__/
+ACESSecurityCamera/GUICode/__pycache__/
 ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.cache
 */vivado_pid6864.str
 *.jou
