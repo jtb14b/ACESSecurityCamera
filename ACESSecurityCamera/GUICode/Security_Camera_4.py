@@ -8,6 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from USBCommunication import myser
+import time
 
 class Ui_Dialog(object):
     mySer = myser()
@@ -16,6 +17,7 @@ class Ui_Dialog(object):
     azPos = 0
     elPos = 0
     zoomPos = 0
+    zoomSize = 1 #In seconds
 
     def setupUi(self, Dialog, port):
         self.powerState = 0
@@ -317,13 +319,13 @@ class Ui_Dialog(object):
     def panLeft(self):
         print("Pan Left")
         self.mySer.SendSerial('A')
-        self.azPos += 100
+        self.azPos -= 100
         self.lineEdit_2.setText(str(self.azPos))
 
     def panRight(self):
         print("Pan Right")
         self.mySer.SendSerial('B')
-        self.azPos -= 100
+        self.azPos += 100
         self.lineEdit_2.setText(str(self.azPos))
 
     def reset(self):
@@ -360,6 +362,7 @@ class Ui_Dialog(object):
         print("Max Zoom In")
         for x in range(10-self.zoomPos):
             self.mySer.SendSerial('E')
+            time.sleep(self.zoomSize)
         self.zoomPos = 10
         print(self.zoomPos)
 
@@ -367,6 +370,7 @@ class Ui_Dialog(object):
         print("Max Zoom Out")
         for x in range(self.zoomPos):
             self.mySer.SendSerial('F')
+            time.sleep(self.zoomSize)
         self.zoomPos = 1
         print(self.zoomPos)
 

@@ -9,8 +9,8 @@
 #endif
 
 #define SSIZEAZ 100
-#define SSIZEEL 5
-#define SSIZEZM
+#define SSIZEEL 3
+#define SSIZEZM 650
 #define AZMIN -547
 #define AZMAX 547
 #define ELMIN -15
@@ -28,28 +28,33 @@ volatile int auto_index;
 
 #ifdef DEBUG
 Adafruit_MotorShield AFMS = Adafruit_MotorShield(0x61);
-Adafruit_MotorShield AFMS2 = Adafruit_MotorShield();
+Adafruit_MotorShield AFMS2 = Adafruit_MotorShield(0x60);
 
-Adafruit_StepperMotor *AZMotor = AFMS.getStepper(200, 1);
+Adafruit_StepperMotor *AZMotor = AFMS2.getStepper(200, 1);
 Adafruit_StepperMotor *ELMotor = AFMS.getStepper(200, 2);
 
-Adafruit_DCMotor *ZoomMotor = AFMS.getMotor(1);
+Adafruit_DCMotor *ZoomMotor = AFMS2.getMotor(4);
 #endif
 
 
 void setup (void)
 {
   Serial.begin(115200);// debugging
+  Serial.println("Setting up");
 
   #ifdef DEBUG
   AFMS.begin();
+  Serial.println("Here");
   AFMS2.begin();
+
+  Serial.println("A");
 
   AZMotor->setSpeed(40);
   ELMotor->setSpeed(.001);
-  ZoomMotor->setSpeed(10);
+  ZoomMotor->setSpeed(100);
   #endif
 
+  Serial.println("B");
   // turn on SPI in slave mode
   SPCR |= bit (SPE);
 
@@ -65,8 +70,12 @@ void setup (void)
   elPos = 0;
   auto_index = 0;
 
+  Serial.println("D");
+
   // now turn on interrupts
   SPI.attachInterrupt();
+
+  Serial.println("Configured");
 
 }  // end of setup
 
@@ -291,22 +300,22 @@ void posReset()
     Serial.println(elPos);
 }
 
-void zoomIn()
+void zoomIn(int STEPSIZE)
 {
   Serial.println("Zoom In");
   #ifdef DEBUG
-  ZoomMotor->run(FORWARD);
-  delay(100);
+  ZoomMotor->run(BACKWARD);
+  delay(STEPSIZE);
   ZoomMotor->run(RELEASE);
   #endif
 }
 
-void zoomOut()
+void zoomOut(int STEPSIZE)
 {
   Serial.println("Zoom Out");
   #ifdef DEBUG
-  ZoomMotor->run(BACKWARD);
-  delay(100);
+  ZoomMotor->run(FORWARD);
+  delay(STEPSIZE);
   ZoomMotor->run(RELEASE);
   #endif
 }
