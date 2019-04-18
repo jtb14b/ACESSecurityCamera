@@ -1,0 +1,116 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 16152
+License: Customer
+
+Current time: 	Wed Apr 17 15:57:38 CDT 2019
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 67 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	jtb14b
+User home directory: C:/Users/jtb14b
+User working directory: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/jtb14b/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/jtb14b/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/jtb14b/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/vivado.log
+Vivado journal file location: 	C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/vivado.jou
+Engine tmp dir: 	C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/.Xil/Vivado-16152-BEN-210-04-9077
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	181 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 519 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 66 MB (+66587kb) [00:00:06]
+// [Engine Memory]: 467 MB (+338541kb) [00:00:06]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\jtb14b\Documents\GitHub\ACESSecurityCamera\ACESSecurityCamera\ACESSecurityCameraCode\ACESSecurityCameraCode.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode' 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 546 MB (+58429kb) [00:00:10]
+// [Engine Memory]: 577 MB (+3589kb) [00:00:11]
+// Tcl Message: open_project C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 605 MB. GUI used memory: 41 MB. Current time: 4/17/19 3:57:42 PM CDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 841.875 ; gain = 149.652 
+// Project name: ACESSecurityCameraCode; location: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode; part: xc7a200tsbg484-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 608 MB (+1840kb) [00:00:16]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 70 MB (+935kb) [00:07:40]
+// [GUI Memory]: 75 MB (+1406kb) [00:11:50]
+// [GUI Memory]: 79 MB (+256kb) [00:18:46]
+// [GUI Memory]: 84 MB (+1499kb) [00:26:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 42 MB. Current time: 4/17/19 4:27:45 PM CDT
+// [GUI Memory]: 89 MB (+136kb) [00:42:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 37 MB. Current time: 4/17/19 4:57:46 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 40 MB. Current time: 4/17/19 5:27:46 PM CDT
+// [GUI Memory]: 94 MB (+587kb) [01:42:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 40 MB. Current time: 4/17/19 5:57:46 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 38 MB. Current time: 4/17/19 6:27:47 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 39 MB. Current time: 4/17/19 6:57:47 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 39 MB. Current time: 4/17/19 7:27:48 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 39 MB. Current time: 4/17/19 7:57:48 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/17/19 8:27:48 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/17/19 8:57:49 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/17/19 9:27:49 PM CDT

@@ -15,6 +15,12 @@ The following must be done to use the GUI:
     'python GUICode\CameraGUI.py'
     or
     'python GUICode\CameraGUI.py -p <COM Port>'
+5) Wait for FPGA Bootup
+    Indicated by green LED labeled 'DONE'
+
+6) Click Power button in GUI
+
+7) Run Commands
 
 Possible other required steps:
 
