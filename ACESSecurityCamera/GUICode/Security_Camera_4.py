@@ -312,7 +312,7 @@ class Ui_Dialog(object):
 
     def tiltDown(self):
         print("Tilt Down")
-        self.mySer.SendSerial('D')
+        self.mySer.SendSerial('I')
         self.elPos -= 3
         self.lineEdit.setText(str(self.elPos))
 
@@ -330,7 +330,7 @@ class Ui_Dialog(object):
 
     def reset(self):
         print("Reset")
-        self.mySer.SendSerial('G')
+        self.mySer.SendSerial('P')
         self.azPos = 0
         self.elPos = 0
 
@@ -351,17 +351,17 @@ class Ui_Dialog(object):
         print("Zooming to:", zoomToVal)
         if zoomToVal > self.zoomPos:
             for x in range(zoomToVal - self.zoomPos):
-                self.mySer.SendSerial('E')
+                self.mySer.SendSerial('J')
         else:
             for x in range(self.zoomPos - zoomToVal):
-                self.mySer.SendSerial('F')
+                self.mySer.SendSerial('K')
         self.zoomPos = zoomToVal
         print(self.zoomPos)
 
     def zoomInMax(self):
         print("Max Zoom In")
         for x in range(10-self.zoomPos):
-            self.mySer.SendSerial('E')
+            self.mySer.SendSerial('J')
             time.sleep(self.zoomSize)
         self.zoomPos = 10
         print(self.zoomPos)
@@ -369,7 +369,7 @@ class Ui_Dialog(object):
     def zoomOutMax(self):
         print("Max Zoom Out")
         for x in range(self.zoomPos):
-            self.mySer.SendSerial('F')
+            self.mySer.SendSerial('K')
             time.sleep(self.zoomSize)
         self.zoomPos = 1
         print(self.zoomPos)

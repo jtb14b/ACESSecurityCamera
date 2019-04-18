@@ -168,19 +168,19 @@ void loop (void)
             //Tilt Up
             tiltUp(SSIZEEL);
             break;
-          case 'D':
+          case 'I':
             //Tilt Down
             tiltDown(SSIZEEL);
             break;
-          case 'E':
+          case 'J':
             //Zoom In
             zoomIn(SSIZEZM);
             break;
-          case 'F':
+          case 'K':
             //Zoom Out
             zoomOut(SSIZEZM);
             break;
-          case 'G':
+          case 'P':
             //Reset
             posReset();
             break;
