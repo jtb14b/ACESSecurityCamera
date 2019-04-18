@@ -32,7 +32,12 @@ module imaging(
     output wire [11:0] dout,
     output wire DVo,
     output wire LVo,
-    output wire FVo
+    output wire FVo,
+    
+    input debugLeft,
+    input debugRight,
+    input debugUp,
+    input debugDown
     );
     
     reg [7:0] toFPA = 8'h00;
@@ -50,6 +55,11 @@ module imaging(
     reg [11:0] demoData [0:9][0:10];
     reg [9:0] rowIndex = 0;
     reg [10:0] colIndex = 0;
+    reg [9:0] rowIndexRead = 0;
+    reg [10:0] colIndexRead = 0;
+    
+    reg [9:0] debugRow = 0;
+    reg [10:0] debugCol = 0;
     
     localparam
         RED = 12'h00f,
@@ -297,21 +307,21 @@ module imaging(
     
     always @ (posedge PIXCLK) begin
         if (cstate == Read) begin
-            rawData[rowIndex][colIndex] = data;
-            if(colIndex == 1280) begin
-                colIndex = 0;
+            rawData[rowIndexRead][colIndexRead] = data;
+            if(colIndexRead == 1280) begin
+                colIndexRead = 0;
             end else begin
-                colIndex = colIndex + 1;
+                colIndexRead = colIndexRead + 1;
             end
         end
     end
     
     always @ (posedge LV) begin
         if (cstate == Read) begin
-            if(rowIndex == 720) begin
-                rowIndex = 0;
+            if(rowIndexRead == 720) begin
+                rowIndexRead = 0;
             end else begin
-                rowIndex = rowIndex + 1;
+                rowIndexRead = rowIndexRead + 1;
             end
         end
     end
@@ -326,8 +336,48 @@ module imaging(
    //     DEBUG <= IMMD;
  //   end
     
-    always @ (rawData[10][10]) begin
-        DEBUG <= rawData[10][10];
+    always @ (debugLeft) begin
+        debugCol = debugCol + 1;
+        if(debugCol < 0) begin
+            debugCol = 0;
+        end
+        if(debugCol >= 1280) begin
+            debugCol = 1279;
+        end
+    end
+    
+    always @ (debugRight) begin
+        debugCol = debugCol - 1;
+        if(debugCol < 0) begin
+            debugCol = 0;
+        end
+        if(debugCol >= 1280) begin
+            debugCol = 1279;
+        end
+    end
+    
+    always @ (debugUp) begin
+        debugRow = debugRow - 1;
+        if(debugRow < 0) begin
+            debugRow = 0;
+        end
+        if(debugRow >= 720) begin
+            debugRow = 719;
+        end
+    end
+    
+    always @ (debugDown) begin
+        debugRow <= debugRow + 1;
+        if(debugRow < 0) begin
+            debugRow = 0;
+        end
+        if(debugRow >= 720) begin
+            debugRow = 719;
+        end
+    end
+    
+    always @ (debugRow or debugCol) begin
+        DEBUG <= rawData[debugRow][debugCol];
     end
     
 endmodule

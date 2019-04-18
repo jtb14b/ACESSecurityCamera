@@ -114,3 +114,304 @@ dismissDialog("Open Project"); // bx (ck)
 // HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/17/19 8:27:48 PM CDT
 // HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/17/19 8:57:49 PM CDT
 // HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/17/19 9:27:49 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/17/19 9:57:49 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/17/19 10:27:50 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/17/19 10:57:50 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/17/19 11:27:51 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/17/19 11:57:51 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 12:27:52 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/18/19 12:57:52 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/18/19 1:27:52 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/18/19 1:57:53 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 2:27:53 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/18/19 2:57:54 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/18/19 3:27:54 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/18/19 3:57:54 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 4:27:55 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 4:57:55 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 5:27:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 5:57:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 6:27:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 6:57:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 7:27:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 7:57:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 35 MB. Current time: 4/18/19 8:27:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 36 MB. Current time: 4/18/19 8:57:58 AM CDT
+// PAPropertyPanels.initPanels (SecurityCameraCode.v) elapsed time: 0.2s
+// Elapsed time: 62977 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 100 MB (+1896kb) [17:29:51]
+// [GUI Memory]: 108 MB (+2922kb) [17:29:52]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), IMG : imaging (imaging.v)]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), IMG : imaging (imaging.v)]", 4, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 124 MB (+10674kb) [17:29:54]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), IMG : imaging (imaging.v), FPACOMM : fpa_communication (fpa_communication.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), IMG : imaging (imaging.v), FPACOMM : fpa_communication (fpa_communication.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("fpa_communication.v", 154, 352); // ce (w, ck)
+selectCodeEditor("fpa_communication.v", 134, 293); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 47 MB. Current time: 4/18/19 9:27:59 AM CDT
+// Elapsed time: 15 seconds
+selectCodeEditor("fpa_communication.v", 65, 430); // ce (w, ck)
+selectCodeEditor("fpa_communication.v", 122, 349); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("fpa_communication.v", 70, 452); // ce (w, ck)
+// Elapsed time: 105 seconds
+selectCodeEditor("fpa_communication.v", 99, 393); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("imaging.v", 158, 335); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("imaging.v", 205, 216); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 24 seconds
+selectCodeEditor("imaging.v", 152, 286); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 40 seconds
+selectCodeEditor("imaging.v", 202, 402); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("imaging.v", 220, 415); // ce (w, ck)
+selectCodeEditor("imaging.v", 224, 417); // ce (w, ck)
+selectCodeEditor("imaging.v", 99, 401); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("imaging.v", 187, 418); // ce (w, ck)
+selectCodeEditor("imaging.v", 99, 388); // ce (w, ck)
+// Elapsed time: 70 seconds
+selectCodeEditor("imaging.v", 122, 434); // ce (w, ck)
+selectCodeEditor("imaging.v", 120, 434); // ce (w, ck)
+selectCodeEditor("imaging.v", 124, 432); // ce (w, ck)
+selectCodeEditor("imaging.v", 125, 430); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("imaging.v", 209, 363); // ce (w, ck)
+selectCodeEditor("imaging.v", 208, 432); // ce (w, ck)
+selectCodeEditor("imaging.v", 148, 366); // ce (w, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("imaging.v", 236, 247); // ce (w, ck)
+selectCodeEditor("imaging.v", 236, 243); // ce (w, ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("imaging.v", 261, 267); // ce (w, ck)
+selectCodeEditor("imaging.v", 178, 285); // ce (w, ck)
+selectCodeEditor("imaging.v", 186, 277); // ce (w, ck)
+selectCodeEditor("imaging.v", 190, 263); // ce (w, ck)
+selectCodeEditor("imaging.v", 116, 281); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("imaging.v", 79, 344); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'c'); // ce (w, ck)
+selectCodeEditor("imaging.v", 233, 260); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+selectCodeEditor("imaging.v", 61, 293); // ce (w, ck)
+selectCodeEditor("imaging.v", 90, 314); // ce (w, ck)
+selectCodeEditor("imaging.v", 95, 342); // ce (w, ck)
+selectCodeEditor("imaging.v", 100, 329); // ce (w, ck)
+selectCodeEditor("imaging.v", 97, 351); // ce (w, ck)
+selectCodeEditor("imaging.v", 98, 369); // ce (w, ck)
+selectCodeEditor("imaging.v", 234, 328); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+selectCodeEditor("imaging.v", 139, 366); // ce (w, ck)
+selectCodeEditor("imaging.v", 144, 430); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("imaging.v", 125, 156); // ce (w, ck)
+selectCodeEditor("imaging.v", 125, 331); // ce (w, ck)
+selectCodeEditor("imaging.v", 162, 366); // ce (w, ck)
+// Elapsed time: 61 seconds
+selectCodeEditor("imaging.v", 78, 319); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'c'); // ce (w, ck)
+selectCodeEditor("imaging.v", 231, 377); // ce (w, ck)
+typeControlKey((HResource) null, "imaging.v", 'v'); // ce (w, ck)
+selectCodeEditor("imaging.v", 133, 415); // ce (w, ck)
+selectCodeEditor("imaging.v", 146, 415); // ce (w, ck)
+selectCodeEditor("imaging.v", 137, 414); // ce (w, ck)
+selectCodeEditor("imaging.v", 109, 432); // ce (w, ck)
+selectCodeEditor("imaging.v", 110, 447); // ce (w, ck)
+selectCodeEditor("imaging.v", 110, 459); // ce (w, ck)
+selectCodeEditor("imaging.v", 111, 477); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 55 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), IMG : imaging (imaging.v), CL : camera_link (camera_link.v)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SecurityCameraCode (SecurityCameraCode.v), IMG : imaging (imaging.v), CL : camera_link (camera_link.v)]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("camera_link.v", 127, 381); // ce (w, ck)
+selectCodeEditor("camera_link.v", 111, 345); // ce (w, ck)
+selectCodeEditor("camera_link.v", 403, 329); // ce (w, ck)
+selectCodeEditor("camera_link.v", 324, 371); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 18 09:40:11 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 78 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpa_communication.v", 3); // k (j, ck)
+selectCodeEditor("fpa_communication.v", 227, 436); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 18 09:41:48 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("fpa_communication.v", 51, 385, false, false, true, false, false); // ce (w, ck) - Alt Key
+selectCodeEditor("fpa_communication.v", 226, 422); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr 18 09:42:26 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1482 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 48 MB. Current time: 4/18/19 9:57:59 AM CDT
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 1900 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Apr 18 10:14:07 2019] Launched impl_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 340 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 113 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "imaging.v", 2); // k (j, ck)
+selectCodeEditor("imaging.v", 243, 237); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "colInde"); // l (aQ, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("imaging.v", 39, 155); // ce (w, ck)
+selectCodeEditor("imaging.v", 266, 435); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("imaging.v", 207, 196); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 18 10:24:24 2019] Launched synth_1... Run output will be captured here: C:/Users/jtb14b/Documents/GitHub/ACESSecurityCamera/ACESSecurityCamera/ACESSecurityCameraCode/ACESSecurityCameraCode.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 47 MB. Current time: 4/18/19 10:28:00 AM CDT

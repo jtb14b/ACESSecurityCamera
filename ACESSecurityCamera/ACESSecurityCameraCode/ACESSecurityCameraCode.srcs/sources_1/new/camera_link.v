@@ -38,7 +38,9 @@ module camera_link(
         for(row = 0; row < 720; row = row +1) begin
             LV = 0;
             for(col = 0; col < 1280; col = col + 1) begin
+                DV = 0;
                 dout = din[row][col];
+                DV = 1;
             end
             LV = 1;
         end

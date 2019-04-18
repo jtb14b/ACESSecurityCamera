@@ -30,7 +30,9 @@ module fpa_communication(
     output reg done,
     
     output reg sclk,
-    inout sdata
+    inout sdata,
+    
+    output reg DEBUG
     );
     
     reg dout = 0;
@@ -280,12 +282,20 @@ module fpa_communication(
         ready = 1;
         ready = 1;
         ready = 1;
+        ready = 1;
         ready = 0;
         ready = 0;
         ready = 0;
         ready = 0;
         ready = 0;
-        ready = 0;
+    end
+    
+    always @ (writeData or readData) begin
+        if(dir == 0) begin
+            DEBUG <= writeData;
+        end else begin
+            DEBUG <= readData;
+        end
     end
     
 endmodule
