@@ -380,10 +380,10 @@ class Ui_Dialog(object):
                 self.mySer.OpenSerial(self.port, 115200, 'N', 1, 8, 0)
                 print("Serial Open")
                 self.reset()
-                time.sleep(.25)
-                self.zoomOutMax()
-                time.sleep(5)
-                self.zoomInMax()
+                #time.sleep(.25)
+                #self.zoomOutMax()
+                #time.sleep(5)
+                #self.zoomInMax()
             except:
                 print("Could not connect to port. Try again.")
 
