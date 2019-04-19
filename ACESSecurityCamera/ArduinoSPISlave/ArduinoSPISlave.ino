@@ -199,7 +199,7 @@ void panLeft(int STEPSIZE)
     {
         Serial.println("Pan Left");
         #ifdef DEBUG
-        AZMotor->step(STEPSIZE, FORWARD, SINGLE);
+        AZMotor->step(STEPSIZE, FORWARD, DOUBLE);
         #endif
         
     
@@ -220,7 +220,7 @@ void panRight(int STEPSIZE)
     {
         Serial.println("Pan Right");
         #ifdef DEBUG
-        AZMotor->step(STEPSIZE, BACKWARD, SINGLE);
+        AZMotor->step(STEPSIZE, BACKWARD, DOUBLE);
         #endif
     
         azPos -= STEPSIZE;
@@ -240,7 +240,7 @@ void tiltUp(int STEPSIZE)
     {
         Serial.println("Tilt Up");
         #ifdef DEBUG
-        ELMotor->step(STEPSIZE, FORWARD, SINGLE);
+        ELMotor->step(STEPSIZE, FORWARD, DOUBLE);
         #endif
     
         elPos += STEPSIZE;
@@ -260,7 +260,7 @@ void tiltDown(int STEPSIZE)
     {
         Serial.println("Tilt Down");
         #ifdef DEBUG
-        ELMotor->step(STEPSIZE, BACKWARD, SINGLE);
+        ELMotor->step(STEPSIZE, BACKWARD, DOUBLE);
         #endif
     
         elPos -= STEPSIZE;
@@ -279,9 +279,9 @@ void posReset()
     Serial.println("Reset Position");
     #ifdef DEBUG
     if(azPos >= 0)
-        AZMotor->step(azPos, BACKWARD, SINGLE);
+        AZMotor->step(azPos, BACKWARD, DOUBLE);
     else
-        AZMotor->step(-azPos, FORWARD, SINGLE);
+        AZMotor->step(-azPos, FORWARD, DOUBLE);
     #endif
     azPos = 0;
 
@@ -290,9 +290,9 @@ void posReset()
 
     #ifdef DEBUG
     if(elPos >= 0)
-        ELMotor->step(elPos, BACKWARD, SINGLE);
+        ELMotor->step(elPos, BACKWARD, DOUBLE);
     else
-        ELMotor->step(-elPos, FORWARD, SINGLE);
+        ELMotor->step(-elPos, FORWARD, DOUBLE);
     #endif
     elPos = 0;
 

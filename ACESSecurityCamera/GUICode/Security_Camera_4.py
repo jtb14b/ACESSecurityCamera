@@ -306,13 +306,13 @@ class Ui_Dialog(object):
 
     def tiltUp(self):
         print("Tilt Up")
-        self.mySer.SendSerial('C')
+        self.mySer.SendSerial('I')
         self.elPos += 3
         self.lineEdit.setText(str(self.elPos))
 
     def tiltDown(self):
         print("Tilt Down")
-        self.mySer.SendSerial('I')
+        self.mySer.SendSerial('C')
         self.elPos -= 3
         self.lineEdit.setText(str(self.elPos))
 
