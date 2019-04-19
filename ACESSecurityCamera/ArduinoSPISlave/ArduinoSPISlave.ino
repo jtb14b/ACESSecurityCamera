@@ -9,12 +9,12 @@
 #endif
 
 #define SSIZEAZ 100
-#define SSIZEEL 3
+#define SSIZEEL 2
 #define SSIZEZM 650
 #define AZMIN -547
 #define AZMAX 547
-#define ELMIN -15
-#define ELMAX 15
+#define ELMIN -12
+#define ELMAX 5
 
 char buf [100];
 volatile byte pos;
@@ -130,7 +130,7 @@ void loop (void)
           posReset();
           break;
         case 2:
-          panLeft(AZMAX-10);
+          panLeft(3*SSIZEAZ);
           break;
         case 3:
           delay(1000);
@@ -139,7 +139,7 @@ void loop (void)
           posReset();
           break;
         case 5:
-          panRight(-AZMIN-10);
+          panRight(3*SSIZEAZ);
           break;
       }
 
@@ -240,7 +240,7 @@ void tiltUp(int STEPSIZE)
     {
         Serial.println("Tilt Up");
         #ifdef DEBUG
-        ELMotor->step(STEPSIZE, FORWARD, DOUBLE);
+        ELMotor->step(STEPSIZE, FORWARD, MICROSTEP);
         #endif
     
         elPos += STEPSIZE;
@@ -260,7 +260,7 @@ void tiltDown(int STEPSIZE)
     {
         Serial.println("Tilt Down");
         #ifdef DEBUG
-        ELMotor->step(STEPSIZE, BACKWARD, DOUBLE);
+        ELMotor->step(STEPSIZE, BACKWARD, MICROSTEP);
         #endif
     
         elPos -= STEPSIZE;
@@ -290,9 +290,9 @@ void posReset()
 
     #ifdef DEBUG
     if(elPos >= 0)
-        ELMotor->step(elPos, BACKWARD, DOUBLE);
+        ELMotor->step(elPos, BACKWARD, MICROSTEP);
     else
-        ELMotor->step(-elPos, FORWARD, DOUBLE);
+        ELMotor->step(-elPos, FORWARD, MICROSTEP);
     #endif
     elPos = 0;
 
